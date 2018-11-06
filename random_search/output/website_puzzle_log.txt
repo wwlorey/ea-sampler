@@ -1,0 +1,1799 @@
+Result Log
+
+seed: 1535749749.2325144
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 1
+1	5
+
+Run 1
+2	8
+
+Run 1
+3	24
+
+Run 1
+4	33
+
+Run 1
+31	39
+
+Run 1
+32	46
+
+Run 1
+33	48
+
+Run 1
+34	53
+
+Run 1
+51	54
+
+Run 1
+52	60
+
+Run 1
+53	62
+
+Run 1
+372	63
+
+Run 1
+373	68
+
+Run 1
+374	78
+
+Run 1
+375	81
+
+Run 1
+5775	82
+
+---------------------------
+
+seed: 1535749749.771911
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 2
+1	4
+
+Run 2
+2	8
+
+Run 2
+3	14
+
+Run 2
+4	17
+
+Run 2
+7	25
+
+Run 2
+31	29
+
+Run 2
+41	31
+
+Run 2
+42	40
+
+Run 2
+43	52
+
+Run 2
+119	54
+
+Run 2
+120	59
+
+Run 2
+161	64
+
+Run 2
+162	67
+
+Run 2
+858	73
+
+Run 2
+859	77
+
+Run 2
+860	84
+
+---------------------------
+
+seed: 1535749750.2972646
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 3
+1	5
+
+Run 3
+2	11
+
+Run 3
+4	12
+
+Run 3
+10	13
+
+Run 3
+14	14
+
+Run 3
+15	25
+
+Run 3
+16	30
+
+Run 3
+17	39
+
+Run 3
+40	47
+
+Run 3
+56	48
+
+Run 3
+96	49
+
+Run 3
+97	56
+
+Run 3
+98	64
+
+Run 3
+1598	66
+
+Run 3
+2561	67
+
+Run 3
+2745	68
+
+Run 3
+5841	70
+
+Run 3
+6552	72
+
+Run 3
+6553	77
+
+---------------------------
+
+seed: 1535749750.8532135
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 4
+1	6
+
+Run 4
+2	15
+
+Run 4
+3	23
+
+Run 4
+25	24
+
+Run 4
+26	35
+
+Run 4
+39	36
+
+Run 4
+53	38
+
+Run 4
+54	44
+
+Run 4
+55	45
+
+Run 4
+56	55
+
+Run 4
+338	57
+
+Run 4
+443	58
+
+Run 4
+518	60
+
+Run 4
+584	71
+
+Run 4
+2657	74
+
+Run 4
+2658	79
+
+Run 4
+6070	84
+
+Run 4
+6071	85
+
+---------------------------
+
+seed: 1535749751.4170651
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 5
+2	2
+
+Run 5
+3	8
+
+Run 5
+4	13
+
+Run 5
+5	18
+
+Run 5
+6	23
+
+Run 5
+7	29
+
+Run 5
+23	30
+
+Run 5
+35	35
+
+Run 5
+36	39
+
+Run 5
+77	45
+
+Run 5
+78	52
+
+Run 5
+79	57
+
+Run 5
+80	60
+
+Run 5
+81	64
+
+Run 5
+1748	70
+
+Run 5
+5222	73
+
+Run 5
+6110	75
+
+Run 5
+6111	79
+
+Run 5
+6112	84
+
+---------------------------
+
+seed: 1535749752.0245059
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 6
+1	9
+
+Run 6
+2	22
+
+Run 6
+3	24
+
+Run 6
+4	29
+
+Run 6
+5	33
+
+Run 6
+6	41
+
+Run 6
+7	49
+
+Run 6
+8	54
+
+Run 6
+31	56
+
+Run 6
+32	61
+
+Run 6
+361	64
+
+Run 6
+362	70
+
+Run 6
+1964	72
+
+Run 6
+2715	79
+
+Run 6
+4388	81
+
+Run 6
+6312	83
+
+---------------------------
+
+seed: 1535749752.7034538
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 7
+1	8
+
+Run 7
+2	14
+
+Run 7
+3	23
+
+Run 7
+4	27
+
+Run 7
+5	36
+
+Run 7
+6	43
+
+Run 7
+7	49
+
+Run 7
+22	51
+
+Run 7
+23	57
+
+Run 7
+105	58
+
+Run 7
+532	60
+
+Run 7
+660	64
+
+Run 7
+661	69
+
+Run 7
+662	77
+
+---------------------------
+
+seed: 1535749753.3941607
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 8
+2	8
+
+Run 8
+3	17
+
+Run 8
+7	18
+
+Run 8
+8	27
+
+Run 8
+9	31
+
+Run 8
+10	47
+
+Run 8
+78	50
+
+Run 8
+244	51
+
+Run 8
+369	52
+
+Run 8
+370	60
+
+Run 8
+659	61
+
+Run 8
+1025	65
+
+Run 8
+1870	68
+
+Run 8
+1871	74
+
+Run 8
+1872	79
+
+Run 8
+6331	85
+
+---------------------------
+
+seed: 1535749754.0845487
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 9
+1	10
+
+Run 9
+2	15
+
+Run 9
+7	25
+
+Run 9
+23	29
+
+Run 9
+40	34
+
+Run 9
+81	39
+
+Run 9
+132	40
+
+Run 9
+242	41
+
+Run 9
+251	47
+
+Run 9
+252	51
+
+Run 9
+253	58
+
+Run 9
+881	61
+
+Run 9
+882	68
+
+Run 9
+883	73
+
+Run 9
+3077	74
+
+Run 9
+4425	76
+
+Run 9
+6154	80
+
+Run 9
+6155	85
+
+---------------------------
+
+seed: 1535749754.7458026
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 10
+1	17
+
+Run 10
+2	23
+
+Run 10
+3	32
+
+Run 10
+4	36
+
+Run 10
+5	41
+
+Run 10
+29	42
+
+Run 10
+75	46
+
+Run 10
+118	47
+
+Run 10
+236	54
+
+Run 10
+237	59
+
+Run 10
+238	73
+
+Run 10
+7756	76
+
+---------------------------
+
+seed: 1535749755.3739328
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 11
+1	9
+
+Run 11
+2	14
+
+Run 11
+5	15
+
+Run 11
+6	21
+
+Run 11
+11	26
+
+Run 11
+20	28
+
+Run 11
+27	35
+
+Run 11
+28	46
+
+Run 11
+44	52
+
+Run 11
+256	55
+
+Run 11
+448	58
+
+Run 11
+504	63
+
+Run 11
+738	67
+
+Run 11
+739	71
+
+Run 11
+2344	72
+
+Run 11
+2977	75
+
+---------------------------
+
+seed: 1535749756.0553117
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 12
+1	6
+
+Run 12
+9	10
+
+Run 12
+12	14
+
+Run 12
+13	19
+
+Run 12
+19	22
+
+Run 12
+20	28
+
+Run 12
+31	32
+
+Run 12
+70	35
+
+Run 12
+71	38
+
+Run 12
+92	44
+
+Run 12
+93	47
+
+Run 12
+94	52
+
+Run 12
+676	58
+
+Run 12
+677	62
+
+Run 12
+1298	65
+
+Run 12
+1299	78
+
+Run 12
+2542	80
+
+Run 12
+2543	85
+
+Run 12
+2544	88
+
+Run 12
+2545	90
+
+---------------------------
+
+seed: 1535749756.6790538
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 13
+3	5
+
+Run 13
+5	8
+
+Run 13
+6	13
+
+Run 13
+7	24
+
+Run 13
+8	34
+
+Run 13
+21	38
+
+Run 13
+96	39
+
+Run 13
+97	45
+
+Run 13
+133	46
+
+Run 13
+286	48
+
+Run 13
+396	52
+
+Run 13
+397	61
+
+Run 13
+1200	64
+
+Run 13
+1201	69
+
+Run 13
+2444	75
+
+Run 13
+9743	78
+
+Run 13
+9744	82
+
+Run 13
+9745	85
+
+---------------------------
+
+seed: 1535749757.261828
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 14
+1	17
+
+Run 14
+4	19
+
+Run 14
+5	21
+
+Run 14
+6	32
+
+Run 14
+14	38
+
+Run 14
+15	43
+
+Run 14
+44	47
+
+Run 14
+63	50
+
+Run 14
+64	57
+
+Run 14
+83	59
+
+Run 14
+84	66
+
+Run 14
+85	72
+
+Run 14
+821	80
+
+---------------------------
+
+seed: 1535749757.8050048
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 15
+1	6
+
+Run 15
+4	9
+
+Run 15
+5	15
+
+Run 15
+6	24
+
+Run 15
+7	36
+
+Run 15
+20	47
+
+Run 15
+21	56
+
+Run 15
+94	64
+
+Run 15
+95	67
+
+Run 15
+96	70
+
+Run 15
+97	80
+
+---------------------------
+
+seed: 1535749758.3234453
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 16
+1	17
+
+Run 16
+2	26
+
+Run 16
+3	28
+
+Run 16
+4	34
+
+Run 16
+5	37
+
+Run 16
+22	41
+
+Run 16
+40	43
+
+Run 16
+126	47
+
+Run 16
+231	53
+
+Run 16
+380	56
+
+Run 16
+381	62
+
+Run 16
+1604	64
+
+Run 16
+1828	68
+
+Run 16
+1829	71
+
+Run 16
+1830	76
+
+Run 16
+1831	81
+
+Run 16
+1832	90
+
+---------------------------
+
+seed: 1535749758.9746497
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 17
+1	6
+
+Run 17
+2	18
+
+Run 17
+3	24
+
+Run 17
+4	33
+
+Run 17
+5	42
+
+Run 17
+178	44
+
+Run 17
+309	47
+
+Run 17
+310	53
+
+Run 17
+311	60
+
+Run 17
+972	64
+
+Run 17
+973	74
+
+Run 17
+974	79
+
+Run 17
+975	84
+
+Run 17
+2056	91
+
+---------------------------
+
+seed: 1535749759.5669131
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 18
+1	5
+
+Run 18
+4	10
+
+Run 18
+5	16
+
+Run 18
+26	20
+
+Run 18
+27	27
+
+Run 18
+28	31
+
+Run 18
+53	32
+
+Run 18
+54	36
+
+Run 18
+55	41
+
+Run 18
+56	47
+
+Run 18
+211	51
+
+Run 18
+212	57
+
+Run 18
+819	58
+
+Run 18
+820	64
+
+Run 18
+821	74
+
+Run 18
+3960	78
+
+---------------------------
+
+seed: 1535749760.2434487
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 19
+1	6
+
+Run 19
+4	12
+
+Run 19
+5	17
+
+Run 19
+11	30
+
+Run 19
+34	37
+
+Run 19
+35	42
+
+Run 19
+110	45
+
+Run 19
+111	51
+
+Run 19
+112	53
+
+Run 19
+113	57
+
+Run 19
+114	67
+
+Run 19
+763	76
+
+Run 19
+764	78
+
+Run 19
+7868	81
+
+Run 19
+7869	84
+
+---------------------------
+
+seed: 1535749760.839694
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 20
+2	7
+
+Run 20
+3	18
+
+Run 20
+4	22
+
+Run 20
+5	26
+
+Run 20
+11	29
+
+Run 20
+12	32
+
+Run 20
+13	43
+
+Run 20
+14	50
+
+Run 20
+100	52
+
+Run 20
+481	58
+
+Run 20
+1226	66
+
+Run 20
+1316	71
+
+Run 20
+1656	72
+
+Run 20
+6200	77
+
+---------------------------
+
+seed: 1535749761.4032438
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 21
+1	9
+
+Run 21
+2	16
+
+Run 21
+3	28
+
+Run 21
+4	34
+
+Run 21
+5	39
+
+Run 21
+53	40
+
+Run 21
+54	49
+
+Run 21
+182	59
+
+Run 21
+183	64
+
+Run 21
+552	67
+
+Run 21
+2008	70
+
+Run 21
+2104	73
+
+Run 21
+2955	76
+
+Run 21
+7813	77
+
+Run 21
+7814	81
+
+Run 21
+7815	84
+
+Run 21
+7816	89
+
+Run 21
+7817	92
+
+---------------------------
+
+seed: 1535749761.974782
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 22
+3	8
+
+Run 22
+4	13
+
+Run 22
+7	17
+
+Run 22
+8	21
+
+Run 22
+13	25
+
+Run 22
+17	31
+
+Run 22
+29	38
+
+Run 22
+30	45
+
+Run 22
+249	48
+
+Run 22
+263	50
+
+Run 22
+264	58
+
+Run 22
+368	60
+
+Run 22
+579	63
+
+Run 22
+669	67
+
+Run 22
+670	73
+
+---------------------------
+
+seed: 1535749762.6863415
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 23
+1	9
+
+Run 23
+2	12
+
+Run 23
+3	18
+
+Run 23
+4	20
+
+Run 23
+5	25
+
+Run 23
+6	31
+
+Run 23
+7	40
+
+Run 23
+61	44
+
+Run 23
+101	45
+
+Run 23
+102	53
+
+Run 23
+308	55
+
+Run 23
+309	65
+
+Run 23
+478	67
+
+Run 23
+1249	69
+
+Run 23
+1250	78
+
+Run 23
+5895	80
+
+---------------------------
+
+seed: 1535749763.2550669
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 24
+2	5
+
+Run 24
+3	14
+
+Run 24
+4	23
+
+Run 24
+16	24
+
+Run 24
+17	30
+
+Run 24
+18	41
+
+Run 24
+19	46
+
+Run 24
+20	53
+
+Run 24
+21	56
+
+Run 24
+258	59
+
+Run 24
+290	71
+
+Run 24
+2586	73
+
+Run 24
+5940	74
+
+Run 24
+6189	75
+
+---------------------------
+
+seed: 1535749763.915051
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 25
+1	3
+
+Run 25
+2	12
+
+Run 25
+3	18
+
+Run 25
+4	27
+
+Run 25
+9	28
+
+Run 25
+10	35
+
+Run 25
+11	38
+
+Run 25
+12	40
+
+Run 25
+13	44
+
+Run 25
+95	50
+
+Run 25
+215	51
+
+Run 25
+216	56
+
+Run 25
+275	58
+
+Run 25
+451	59
+
+Run 25
+452	67
+
+Run 25
+453	75
+
+Run 25
+454	77
+
+Run 25
+7131	80
+
+---------------------------
+
+seed: 1535749764.4920883
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 26
+2	3
+
+Run 26
+3	12
+
+Run 26
+4	20
+
+Run 26
+5	26
+
+Run 26
+20	29
+
+Run 26
+30	37
+
+Run 26
+31	47
+
+Run 26
+32	58
+
+Run 26
+229	60
+
+Run 26
+582	62
+
+Run 26
+749	68
+
+Run 26
+750	75
+
+Run 26
+3449	77
+
+Run 26
+3450	83
+
+Run 26
+3451	86
+
+---------------------------
+
+seed: 1535749765.0563533
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 27
+1	5
+
+Run 27
+4	9
+
+Run 27
+13	11
+
+Run 27
+16	12
+
+Run 27
+18	13
+
+Run 27
+21	22
+
+Run 27
+22	27
+
+Run 27
+23	33
+
+Run 27
+24	40
+
+Run 27
+31	41
+
+Run 27
+32	46
+
+Run 27
+33	50
+
+Run 27
+34	57
+
+Run 27
+1055	58
+
+Run 27
+1180	59
+
+Run 27
+1181	66
+
+Run 27
+2105	70
+
+Run 27
+2106	72
+
+Run 27
+4320	74
+
+Run 27
+8102	77
+
+---------------------------
+
+seed: 1535749765.6133459
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 28
+2	7
+
+Run 28
+4	9
+
+Run 28
+10	12
+
+Run 28
+14	20
+
+Run 28
+15	26
+
+Run 28
+16	31
+
+Run 28
+17	39
+
+Run 28
+30	41
+
+Run 28
+31	49
+
+Run 28
+167	58
+
+Run 28
+168	61
+
+Run 28
+532	62
+
+Run 28
+533	66
+
+Run 28
+1271	68
+
+Run 28
+1434	69
+
+Run 28
+1435	76
+
+Run 28
+1436	81
+
+Run 28
+1437	83
+
+Run 28
+2493	86
+
+Run 28
+3122	87
+
+Run 28
+3123	92
+
+Run 28
+3124	95
+
+Run 28
+3125	97
+
+---------------------------
+
+seed: 1535749766.1998067
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 29
+1	3
+
+Run 29
+2	12
+
+Run 29
+5	13
+
+Run 29
+6	20
+
+Run 29
+7	26
+
+Run 29
+35	28
+
+Run 29
+87	31
+
+Run 29
+88	35
+
+Run 29
+89	47
+
+Run 29
+95	49
+
+Run 29
+96	53
+
+Run 29
+594	54
+
+Run 29
+666	60
+
+Run 29
+945	61
+
+Run 29
+946	63
+
+Run 29
+947	70
+
+Run 29
+1646	72
+
+Run 29
+5442	76
+
+---------------------------
+
+seed: 1535749766.7645376
+
+puzzle source: input/a1.txt
+
+board size (#cols x #rows): 14 x 14
+enforce_adj_quotas: False
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 30
+1	9
+
+Run 30
+4	17
+
+Run 30
+5	26
+
+Run 30
+6	41
+
+Run 30
+84	48
+
+Run 30
+85	53
+
+Run 30
+120	55
+
+Run 30
+121	60
+
+Run 30
+635	64
+
+Run 30
+938	65
+
+Run 30
+939	67
+
+Run 30
+975	71
+
+Run 30
+976	75
+
+Run 30
+4821	78
+
+---------------------------
+

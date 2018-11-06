@@ -1,0 +1,632 @@
+Result Log
+
+seed: 1535749423.046145
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 1
+314	8
+
+---------------------------
+
+seed: 1535749423.3989012
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 2
+5	4
+
+---------------------------
+
+seed: 1535749423.7221365
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 3
+169	7
+
+---------------------------
+
+seed: 1535749424.039965
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 4
+134	6
+
+---------------------------
+
+seed: 1535749424.3861063
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 5
+22	7
+
+---------------------------
+
+seed: 1535749424.6932373
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 6
+23	7
+
+---------------------------
+
+seed: 1535749425.0384572
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 7
+58	7
+
+---------------------------
+
+seed: 1535749425.3637743
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 8
+115	7
+
+---------------------------
+
+seed: 1535749425.707689
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 9
+51	8
+
+---------------------------
+
+seed: 1535749426.0958555
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 10
+186	7
+
+---------------------------
+
+seed: 1535749426.453302
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 11
+340	8
+
+---------------------------
+
+seed: 1535749426.8089666
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 12
+43	7
+
+---------------------------
+
+seed: 1535749427.151298
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 13
+18	6
+
+---------------------------
+
+seed: 1535749427.5047765
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 14
+6	6
+
+---------------------------
+
+seed: 1535749427.8529146
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 15
+42	7
+
+---------------------------
+
+seed: 1535749428.179776
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 16
+182	7
+
+---------------------------
+
+seed: 1535749428.5286434
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 17
+1103	8
+
+---------------------------
+
+seed: 1535749428.8933372
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 18
+106	8
+
+---------------------------
+
+seed: 1535749429.238614
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 19
+87	7
+
+---------------------------
+
+seed: 1535749429.5498974
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 20
+4	7
+
+---------------------------
+
+seed: 1535749429.892735
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 21
+39	7
+
+---------------------------
+
+seed: 1535749430.2105162
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 22
+75	8
+
+---------------------------
+
+seed: 1535749430.559694
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 23
+64	7
+
+---------------------------
+
+seed: 1535749430.8885374
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 24
+281	8
+
+---------------------------
+
+seed: 1535749431.2588332
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 25
+4	7
+
+---------------------------
+
+seed: 1535749431.593997
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 26
+325	8
+
+---------------------------
+
+seed: 1535749431.9355764
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 27
+48	6
+
+---------------------------
+
+seed: 1535749432.2596872
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 28
+223	8
+
+---------------------------
+
+seed: 1535749432.6004033
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 29
+112	7
+
+---------------------------
+
+seed: 1535749432.9207819
+
+randomly generated puzzle
+	min_random_board_dimension: 3
+	max_random_board_dimension: 10
+	override_random_board_dimensions: True
+	override_num_rows: 3
+	override_num_cols: 3
+	black_square_value_probabilities: [0.02, 0.18, 0.2, 0.5, 0.1]
+	black_square_placement_prob: 0.2
+
+board size (#cols x #rows): 3 x 3
+enforce_adj_quotas: True
+adj_value_dont_care: 5
+max_num_random_bulb_placements: 1
+
+Run 30
+38	6
+
+---------------------------
+
