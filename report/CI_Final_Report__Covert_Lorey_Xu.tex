@@ -30,7 +30,7 @@
 {\Large CpE5310 Computational Intelligence\par}
 \vspace{0.2cm}
 
-{\large Evolutionary Algorithm Sampling and Comparison\par}
+{\large Evolutionary Algorithm Sampling\par}
 \vspace{3cm}
 
 {\large Prepared by: Nicholas Covert, William Lorey, and Ruicheng Xu\par}
@@ -51,7 +51,22 @@
 \clearpage
 
 
+\section{Abstract}
+
+TODO
+
+
 \section{Random Search}
+
+\subsection{Introduction}
+
+TODO
+
+
+\subsection{Discussion}
+
+TODO
+
 
 \begin{figure}[H]
     \addgraphic{random_gen_soln_graph}
@@ -68,7 +83,12 @@
 
 \section{Standard EA}
 
-\subsection{Statistical Analysis Discussion}
+\subsection{Introduction}
+
+TODO
+
+
+\subsection{Statistical Analysis Overview}
 
 For both puzzle varieties (the provided puzzle and the generated puzzle) the 
 evolutionary algorithm was compared to the random search algorithm to determine 
@@ -101,8 +121,6 @@ larger mean when compared to that of the random search. Because of this, the
 evolutionary algorithm is proven to be superior to the random search for this problem 
 instance, in both the case of the provided puzzle and the randomly generated puzzle.
 
-
-\subsection{Statistical Analysis for Provided Puzzle}
 
 \begin{table}[H]
 \centering
@@ -152,8 +170,6 @@ Standard Deviation & sqrt(0.0009928906073) & 0.03151016672 \\ \hline
 \end{table}
 
 
-\subsection{Statistical Analysis for Randomly Generated Puzzle}
-
 \begin{table}[H]
 \centering
 \caption{F-Test Two-Sample for Variances for Randomly Generated Puzzle Analysis}
@@ -201,12 +217,9 @@ Standard Deviation & sqrt(0.001202739143) & 0.03468052973 \\ \hline
 \end{table}
 
 
+\subsection{Validity Enforced versus Uniform Random EA Initialization Analysis, Provided Puzzle}
 
-
-
-\subsection{BONUS: Statistical Analysis for Provided Puzzle}
-
-Table 7, Table 8, and Table 9 are the result of statistical analysis performed on the 
+Table \ref{bonus_table1}, Table \ref{bonus_table2}, and Table \ref{bonus_table3} are the result of statistical analysis performed on the 
 evolutionary algorithm run on a provided puzzle with one version initialized in a 
 uniform random approach and the other initialized with validity enforcement also using 
 a uniform random approach. The fitness distribution was not known to be normal 
@@ -227,11 +240,10 @@ The two-tailed two-sample t-test assuming unequal variances was then performed. 
 For this reason, the null hypothesis could not be rejected and the variable with the better mean did not indicate a statistically better algorithm (for this problem instance). Instead, both algorithms were comparable in producing fit solutions.
 
 
-
 \begin{table}[H]
 \centering
 \caption{Additional F-Test Two-Sample for Variances for Provided Puzzle Analysis}
-\label{my-label}
+\label{bonus_table1}
 \begin{tabular}{l|l|l}
  & Random Search & EA \\ \hline
 Mean & 0.9923423423 & 0.993018018 \\
@@ -247,7 +259,7 @@ F Critical one-tail & 1.860811435 &
 \begin{table}[H]
 \centering
 \caption{t-Test Two-Sample Assuming Unequal Variances for Provided Puzzle Analysis}
-\label{my-label}
+\label{bonus_table2}
 \begin{tabular}{l|l|l}
  & Random Search & EA \\ \hline
 Mean & 0.9923423423 & 0.993018018 \\
@@ -266,8 +278,8 @@ t Critical two-tail & 2.001717484 &
 
 \begin{table}[H]
 \centering
-\caption{BONUS: Standard Deviation for Provided Puzzle Analysis}
-\label{my-label}
+\caption{Standard Deviation for Provided Puzzle Analysis}
+\label{bonus_table3}
 \begin{tabular}{|l|l|l|}
 \hline
 Standard Deviation & sqrt(0.00004638842011) & 0.0068109045 \\ \hline
@@ -277,9 +289,9 @@ Standard Deviation & sqrt(0.00004638842011) & 0.0068109045 \\ \hline
 
 
 
-\subsection{BONUS: Statistical Analysis for Randomly Generated Puzzle}
+\subsection{Validity Enforced versus Uniform Random EA Initialization Analysis, Randomly Generated Puzzles}
 
-Table 10, Table 11, and Table 12 are the result of statistical analysis performed on 
+Table \ref{bonus_table4}, Table \ref{bonus_table5}, and Table \ref{bonus_table6} are the result of statistical analysis performed on 
 the evolutionary algorithm run on a randomly generated puzzle with one version 
 initialized in a uniform random approach and the other initialized with validity 
 enforcement also using a uniform random approach. The fitness distribution was not 
@@ -300,13 +312,10 @@ The two-tailed two-sample t-test assuming unequal variances was then performed. 
 For this reason, the null hypothesis could not be rejected and the variable with the better mean did not indicate a statistically better algorithm (for this problem instance). Instead, both algorithms were comparable in producing fit solutions.
 
 
-
-
-
-\begin{table}[]
+\begin{table}[H]
 \centering
-\caption{Additional F-Test Two-Sample for Variances for Randomly Generated Puzzle Analysis}
-\label{my-label}
+\caption{F-Test Two-Sample for Variances for Randomly Generated Puzzle Analysis}
+\label{bonus_table4}
 \begin{tabular}{l|l|l}
  & Random Search & EA \\ \hline
 Mean & 0.9936490682 & 0.9904708897 \\
@@ -320,10 +329,10 @@ F Critical one-tail & 0.5373999648 &
 \end{table}
 
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 \caption{t-Test Two-Sample Assuming Unequal Variances for Randomly Generated Puzzle Analysis}
-\label{my-label}
+\label{bonus_table5}
 \begin{tabular}{l|l|l}
  & Random Search & EA \\ \hline
 Mean & 0.9936490682 & 0.9904708897 \\
@@ -341,10 +350,10 @@ t Critical two-tail & 2.001717484 &
 \end{table}
 
 
-\begin{table}[]
+\begin{table}[H]
 \centering
-\caption{BONUS: Standard Deviation for Randomly Generated Puzzle Analysis}
-\label{my-label}
+\caption{Standard Deviation for Randomly Generated Puzzle Analysis}
+\label{bonus_table6}
 \begin{tabular}{|l|l|l|}
 \hline
 Standard Deviation & sqrt(0.00008180893878) & 0.00904482939 \\ \hline
@@ -352,43 +361,36 @@ Standard Deviation & sqrt(0.00008180893878) & 0.00904482939 \\ \hline
 \end{table}
 
 
-
-
-
-\begin{figure}
+\begin{figure}[H]
     \addgraphic{random_gen_log_BONUS_graph}
-    \caption{BONUS: Evaluations versus Average Local Fitness and Evaluations versus Local Best Fitness for Randomly Generated Puzzle, Averaged Over All Runs}
+    \caption{Evaluations versus Average Local Fitness and Evaluations versus Local Best Fitness for Uniform Random Initialized, Randomly Generated Puzzle, Averaged Over All Runs}
     \label{fig:std_rand_bonus}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \addgraphic{random_gen_log_graph}
-    \caption{Evaluations versus Average Local Fitness and Evaluations versus 
-Local Best Fitness for Randomly Generated Puzzle, Averaged Over All Runs}
+    \caption{Evaluations versus Average Local Fitness and Evaluations versus Local Best Fitness for Validity Enforced Initialized, Randomly Generated Puzzle, Averaged Over All Runs}
     \label{fig:std_rand_norm}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \addgraphic{website_puzzle_log_BONUS_graph}
-    \caption{BONUS: Evaluations versus Average Local Fitness and Evaluations versus Local Best Fitness for Provided Puzzle, Averaged Over All Runs}
+    \caption{Evaluations versus Average Local Fitness and Evaluations versus Local Best Fitness for Uniform Random Initialized, Provided Puzzle, Averaged Over All Runs}
     \label{fig:std_web_bonus}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \addgraphic{website_puzzle_log_graph}
-    \caption{Evaluations versus Average Local Fitness and Evaluations versus 
-Local Best Fitness for Provided Puzzle, Averaged Over All Runs}
+    \caption{Evaluations versus Average Local Fitness and Evaluations versus Local Best Fitness for Validity Enforced Initialized, Provided Puzzle, Averaged Over All Runs}
     \label{fig:std_web_norm}
 \end{figure}
-
-
 
 
 \section{Constraint Satisfaction EA}
 
 \subsection{Introduction}
 
-Assignment 1c involved implementing an EA leveraging constraint satisfaction to
+This section involved implementing an EA leveraging constraint satisfaction to
 more effectively solve Light Up puzzles. This report compares the performance of
 penalty function and repair function constraint satisfaction techniques as well as
 plain-vanilla EA performance. It also outlines a comparison between Validity Forced plus 
@@ -414,6 +416,31 @@ show evaluations versus fitness for the aforementioned EAs tested against random
 for situations where the best fitness for a solution plateaus, there is possibility of encountering a decreasing average fitness
 as higher mutation factors are introduced to combat a stagnant population.
 
+\begin{figure}[H]
+    \addgraphic{website_puzzle_validity_enforced_graph}
+    \fitnessplotcaption{Penalty Function EA with the Validity Enforced, Provided Puzzle}
+    \label{fig:website_puzzle_validity_enforced_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_validity_enforced_bonus_graph}
+    \fitnessplotcaption{Repair Function EA with the Validity Enforced, Provided Puzzle}
+    \label{fig:website_puzzle_validity_enforced_bonus_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_validity_enforced_graph}
+    \fitnessplotcaption{Penalty Function EA with the Validity Enforced, Randomly Generated Puzzle}
+    \label{fig:random_gen_validity_enforced_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_validity_enforced_bonus_graph}
+    \fitnessplotcaption{Repair Function EA with the Validity Enforced, Randomly Generated Puzzle}
+    \label{fig:random_gen_validity_enforced_bonus_graph}
+\end{figure}
+
+
 Through visually examining each configuration's fitness plots, it appears that the penalty function EA 
 outperforms the repair function EA. However, statistical analysis seen in Table \ref{rand_constr} and Table \ref{provided_constr}
 proves that for randomly generated puzzles, neither constraint satisfaction method yields a more effective EA. Note that the table
@@ -423,165 +450,7 @@ Equal Variances depending on the F-Test output.
 A performance boost was proven when examining the provided puzzle tests, proving that the penalty function EA was in fact
 optimal when compared to the repair function EA for that problem. 
 
-The vanilla EA tested on a validity enforced initialization (Figure \ref{fig:website_puzzle_validity_enforced_vanilla_graph} 
-and Figure \ref{fig:random_gen_validity_enforced_vanilla_graph}) performed very poorly compared to the constraint satisfaction EAs.
-This is because with black cell adjacency constraints enforced, invalid solutions produce fitness values of zero. With many invalid solutions
-dominating the population, no search gradient is provided and the EA struggles to find any solution.
-
-
-\subsection{Initialization Comparisons}
-
-The effect of Validity Forced plus Uniform Random versus plain Uniform Random was examined
-regarding the plain-vanilla EA, the penalty function EA, and the repair function EA.
-
-The comparison for the plain-vanilla EA tested against the randomly generated puzzle
-(graphed in Figure \ref{fig:random_gen_uniform_random_vanilla_graph}
-and Figure \ref{fig:random_gen_validity_enforced_vanilla_graph}, and analyzed in Table \ref{uniform_vs_validity_vanilla_rand})
-proved that neither initialization method led to quantifiable improvements. Granted, neither plain-vanilla EA configuration
-managed to reliably find meaningful solutions.
-
-Figure \ref{fig:random_gen_validity_enforced_graph} and Figure \ref{fig:random_gen_uniform_random_graph} 
-illustrate the penalty function EA configuration tested with both Uniform Random and 
-Validity Enforced plus Uniform Random for randomly generated puzzles. Figure \ref{fig:website_puzzle_validity_enforced_graph} 
-and Figure \ref{fig:website_puzzle_uniform_random_graph} illustrate
-the same comparison for the provided puzzle. The statistical analysis comparing these two 
-configurations can be found in Table \ref{uniform_penalty_vs_validity_penalty_rand} and Table \ref{uniform_vs_validity_penalty_provided}.
-
-This statistical analysis showed that for randomly generated puzzles, neither initialization method
-made a quantifiable improvement on the EA's results. Randomly generated puzzles are generally less
-complicated to solve, so the Validity Enforced initialization's lack of impact in this case is justified.
-
-The analysis also showed that the EA was more sensitive to initialization configuration
-for the provided puzzle, an objectively difficult puzzle to solve. The Validity Enforced Uniform Random
-initialization configured EA proved to be statistically better than the Uniform Random initialization
-configured EA for this problem instance. Since enforcing validity upon initialization shrinks the search space by ensuring the validity
-of conditions that can only be fulfilled one way (such as a `3' valued black cell placed along an edge leads to one single way to
-ensure that constraint is valid), and since the search space is more difficult to traverse for 
-highly difficult puzzles, Validity Enforced Uniform Random initialization produces a higher performing EA for 
-the provided puzzle.
-
-
-\subsection{The Penalty Coefficient and its Effect on Solution Quality}
-
-The penalty function EA, tested against the provided puzzle, was configured using three different penalty coefficients
-to test their effect on the EA's performance. The first coefficient tested was a small coefficient, equating to 0.25. The
-second was the medium coefficient, equating to 3. The third was the large coefficient, equating to 10. The fitness graphs for
-each of these coefficients may be found in Figure \ref{fig:website_puzzle_validity_enforced_small_penalty_graph},
-Figure \ref{fig:website_puzzle_validity_enforced_med_penalty_graph}, and Figure 
-\ref{fig:website_puzzle_validity_enforced_large_penalty_graph} respectively.
-
-In order to properly compare each configuration, pairwise statistical analysis was performed between each pair of coefficient types
-(small, medium, and large). Analysis comparing the small and medium coefficients (Table \ref{small_vs_med}) showed that the small
-penalty coefficient of 0.25 led to an EA that outperformed the EA configured with the medium coefficient of 3. The comparison between
-the medium and large coefficients (Table \ref{med_vs_large}) led to the conclusion that, again, the smaller coefficient configured EA 
-outperformed the larger penalty coefficient configured EA. This conclusion was also drawn from the last comparison, comparing the small
-penalty coefficient to the large penalty coefficient (Table \ref{small_vs_large}).
-
-In each comparison case, the smaller penalty function led to a higher best fitness and a higher average population fitness when
-all run data was averaged. This is because when invalid individuals that do not meet all constraints are penalized, their fitness decreases
-by a small fraction for smaller penalty coefficients and by a larger fraction for larger penalty coefficients. The final population of a
-penalty function configured EA using a small penalty function may actually have the same number of invalid solutions as the population of an
-EA configured with a large penalty coefficient, but the small coefficient EA will read as having higher fitness values. With this fact in mind,
-it is also important to consider the reason a penalty function constraint satisfaction method is used. Employing a penalty function allows for
-invalid solutions to be examined with the hope that those invalid solutions lead to a valid solution after some exploration. This can be 
-equated to traversing the `sea' of validity on the way to a more optimal solution. Keeping the penalty coefficient relatively small incentivizes
-the traversal of invalid areas of the search space, possibly allowing for a more optimal solution to be discovered.
-
-
-% Provided puzzle figures
-\begin{figure}
-    \addgraphic{website_puzzle_validity_enforced_graph}
-    \fitnessplotcaption{Penalty Function EA with the Validity Enforced, Provided Puzzle}
-    \label{fig:website_puzzle_validity_enforced_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_validity_enforced_bonus_graph}
-    \fitnessplotcaption{Repair Function EA with the Validity Enforced, Provided Puzzle}
-    \label{fig:website_puzzle_validity_enforced_bonus_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_validity_enforced_vanilla_graph}
-    \fitnessplotcaption{Plain-Vanilla EA with the Validity Enforced, Provided Puzzle}
-    \label{fig:website_puzzle_validity_enforced_vanilla_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_uniform_random_graph}
-    \fitnessplotcaption{Penalty Function EA with the Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_puzzle_uniform_random_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_uniform_random_bonus_graph}
-    \fitnessplotcaption{Repair Function EA with the Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_puzzle_uniform_random_bonus_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_uniform_random_vanilla_graph}
-    \fitnessplotcaption{Plain-Vanilla EA with the Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_puzzle_uniform_random_vanilla_graph}
-\end{figure}
-
-% Randomly generated puzzle figures
-\begin{figure}
-    \addgraphic{random_gen_validity_enforced_graph}
-    \fitnessplotcaption{Penalty Function EA with the Validity Enforced, Randomly Generated Puzzle}
-    \label{fig:random_gen_validity_enforced_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_validity_enforced_bonus_graph}
-    \fitnessplotcaption{Repair Function EA with the Validity Enforced, Randomly Generated Puzzle}
-    \label{fig:random_gen_validity_enforced_bonus_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_validity_enforced_vanilla_graph}
-    \fitnessplotcaption{Plain-Vanilla EA with the Validity Enforced, Randomly Generated Puzzle}
-    \label{fig:random_gen_validity_enforced_vanilla_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_uniform_random_graph}
-    \fitnessplotcaption{Penalty Function EA with the Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_uniform_random_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_uniform_random_bonus_graph}
-    \fitnessplotcaption{Repair Function EA with the Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_uniform_random_bonus_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_uniform_random_vanilla_graph}
-    \fitnessplotcaption{Plain-Vanilla EA with the Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_uniform_random_vanilla_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_validity_enforced_small_penalty_graph}
-    \fitnessplotcaption{Penalty Function (with Small Penalty Coefficient = 0.25) EA with the Validity Enforced, Provided Puzzle}
-    \label{fig:website_puzzle_validity_enforced_small_penalty_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_validity_enforced_graph}
-    \fitnessplotcaption{Penalty Function (with Large Penalty Coefficient = 3) EA with the Validity Enforced, Provided Puzzle}
-    \label{fig:website_puzzle_validity_enforced_med_penalty_graph}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_validity_enforced_large_penalty_graph}
-    \fitnessplotcaption{Penalty Function (with Large Penalty Coefficient = 10) EA with the Validity Enforced, Provided Puzzle}
-    \label{fig:website_puzzle_validity_enforced_large_penalty_graph}
-\end{figure}
-
-% Tables
-\begin{table}[]
+\begin{table}[H]
     \tablecaption{Validity Enforced Penalty Function and Repair function, Randomly Generated Puzzle}
     \label{rand_constr}
     \resizebox{\textwidth}{!}{%
@@ -607,7 +476,7 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     }
 \end{table}
 
-\begin{table}[]
+\begin{table}[H]
     \tablecaption{Validity Enforced Penalty Function and Repair function, Provided Puzzle}
     \label{provided_constr}
     \resizebox{\textwidth}{!}{%
@@ -633,8 +502,44 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     }
 \end{table}
 
-\begin{table}[]
-    \tablecaption{Uniform Random Initialized Vanilla and Validity Enforced Initalized Vanilla, Randomly Generated Puzzle}
+
+The vanilla EA tested on a validity enforced initialization (Figure \ref{fig:website_puzzle_validity_enforced_vanilla_graph} 
+and Figure \ref{fig:random_gen_validity_enforced_vanilla_graph}) performed very poorly compared to the constraint satisfaction EAs.
+This is because with black cell adjacency constraints enforced, invalid solutions produce fitness values of zero. With many invalid solutions
+dominating the population, no search gradient is provided and the EA struggles to find any solution.
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_validity_enforced_vanilla_graph}
+    \fitnessplotcaption{Plain-Vanilla EA with the Validity Enforced, Provided Puzzle}
+    \label{fig:website_puzzle_validity_enforced_vanilla_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_validity_enforced_vanilla_graph}
+    \fitnessplotcaption{Plain-Vanilla EA with the Validity Enforced, Randomly Generated Puzzle}
+    \label{fig:random_gen_validity_enforced_vanilla_graph}
+\end{figure}
+
+
+\subsection{Initialization Comparisons}
+
+The effect of Validity Forced plus Uniform Random versus plain Uniform Random was examined
+regarding the plain-vanilla EA, the penalty function EA, and the repair function EA.
+
+The comparison for the plain-vanilla EA tested against the randomly generated puzzle
+(graphed in Figure \ref{fig:random_gen_uniform_random_vanilla_graph}
+and Figure \ref{fig:random_gen_validity_enforced_vanilla_graph}, and analyzed in Table \ref{uniform_vs_validity_vanilla_rand})
+proved that neither initialization method led to quantifiable improvements. Granted, neither plain-vanilla EA configuration
+managed to reliably find meaningful solutions.
+
+\begin{figure}[H]
+    \addgraphic{random_gen_uniform_random_vanilla_graph}
+    \fitnessplotcaption{Plain-Vanilla EA with the Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_uniform_random_vanilla_graph}
+\end{figure}
+
+\begin{table}[H]
+    \tablecaption{Uniform Random Initialized Vanilla and Validity Enforced Initialized Vanilla, Randomly Generated Puzzle}
     \label{uniform_vs_validity_vanilla_rand}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
@@ -659,8 +564,28 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     }
 \end{table}
 
-\begin{table}[]
-    \tablecaption{Uniform Random Initialized Penalty Function and Validity Enforced Initalized Penalty Function, Randomly Generated Puzzle}
+
+Figure \ref{fig:random_gen_validity_enforced_graph} and Figure \ref{fig:random_gen_uniform_random_graph} 
+illustrate the penalty function EA configuration tested with both Uniform Random and 
+Validity Enforced plus Uniform Random for randomly generated puzzles. Figure \ref{fig:website_puzzle_validity_enforced_graph} 
+and Figure \ref{fig:website_puzzle_uniform_random_graph} illustrate
+the same comparison for the provided puzzle. The statistical analysis comparing these two 
+configurations can be found in Table \ref{uniform_penalty_vs_validity_penalty_rand} and Table \ref{uniform_vs_validity_penalty_provided}.
+
+\begin{figure}[H]
+    \addgraphic{random_gen_uniform_random_graph}
+    \fitnessplotcaption{Penalty Function EA with the Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_uniform_random_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_uniform_random_graph}
+    \fitnessplotcaption{Penalty Function EA with the Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_puzzle_uniform_random_graph}
+\end{figure}
+
+\begin{table}[H]
+    \tablecaption{Uniform Random Initialized Penalty Function and Validity Enforced Initialized Penalty Function, Randomly Generated Puzzle}
     \label{uniform_penalty_vs_validity_penalty_rand}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
@@ -685,8 +610,8 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     }
 \end{table}
 
-\begin{table}[]
-    \tablecaption{Uniform Random Initialized Penalty Function and Validity Enforced Initalized Penalty Function, Provided Puzzle}
+\begin{table}[H]
+    \tablecaption{Uniform Random Initialized Penalty Function and Validity Enforced Initialized Penalty Function, Provided Puzzle}
     \label{uniform_vs_validity_penalty_provided}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
@@ -711,60 +636,58 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     }
 \end{table}
 
-\begin{table}[]
-    \tablecaption{Uniform Random Initialized Repair Function and Validity Enforced Initalized Repair Function, Randomly Generated Puzzle}
-    \label{uniform_vs_validity_repair_rand}
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|l|l|l|}
-    \hline
-                                                                                                                & random\_gen\_uniform\_random\_bonus & random\_gen\_validity\_enforced\_bonus \\ \hline
-    mean                                                                                                          & 0.9790060265443229                  & 0.9188060294943169                     \\ \hline
-    variance                                                                                                      & 0.0002560072950964829               & 0.060460786982912955                   \\ \hline
-    standard deviation                                                                                            & 0.016000227970141015                & 0.24588775281195474                    \\ \hline
-    observations                                                                                                  & 30                                  & 30                                     \\ \hline
-    df                                                                                                            & 29                                  & 29                                     \\ \hline
-    F                                                                                                             & 0.004234269976817107                &                                        \\ \hline
-    F critical                                                                                                    & 0.5373999648406917                  &                                        \\ \hline
-    Equal variances assumed                                                                                       &                                     &                                        \\ \hline
-                                                                                                                &                                     &                                        \\ \hline
-    observations                                                                                                  & 30                                  &                                        \\ \hline
-    df                                                                                                            & 58                                  &                                        \\ \hline
-    t Stat                                                                                                        & 1.315652066180613                   &                                        \\ \hline
-    P two-tail                                                                                                    & 0.19346782059815182                 &                                        \\ \hline
-    t Critical two-tail                                                                                           & 2.0017                              &                                        \\ \hline
-    Nether random\_gen\_validity\_enforced\_bonus nor random\_gen\_uniform\_random\_bonus is statistically better &                                     &                                        \\ \hline
-    \end{tabular}%
-    }
-\end{table}
 
-\begin{table}[]
-    \tablecaption{Uniform Random Initialized Repair Function and Validity Enforced Initalized Repair Function, Provided Puzzle}
-    \label{uniform_vs_validity_repair_provided}
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|l|l|l|}
-    \hline
-                                                                                                                        & website\_puzzle\_uniform\_random\_bonus & website\_puzzle\_validity\_enforced\_bonus \\ \hline
-    mean                                                                                                                  & 0.5038288288288288                      & 0.3173423423423423                         \\ \hline
-    variance                                                                                                              & 0.2221989388036686                      & 0.2015810912263615                         \\ \hline
-    standard deviation                                                                                                    & 0.47137982434939724                     & 0.4489778293260832                         \\ \hline
-    observations                                                                                                          & 30                                      & 30                                         \\ \hline
-    df                                                                                                                    & 29                                      & 29                                         \\ \hline
-    F                                                                                                                     & 1.1022806625952564                      &                                            \\ \hline
-    F critical                                                                                                            & 0.5373999648406917                      &                                            \\ \hline
-    Unequal variances assumed                                                                                             &                                         &                                            \\ \hline
-                                                                                                                        &                                         &                                            \\ \hline
-    observations                                                                                                          & 30                                      &                                            \\ \hline
-    df                                                                                                                    & 31                                      &                                            \\ \hline
-    t Stat                                                                                                                & 1.5426809688332364                      &                                            \\ \hline
-    P two-tail                                                                                                            & 0.12835995483574056                     &                                            \\ \hline
-    t Critical two-tail                                                                                                   & 2.0395                                  &                                            \\ \hline
-    Nether website\_puzzle\_validity\_enforced\_bonus nor website\_puzzle\_uniform\_random\_bonus is statistically better &                                         &                                            \\ \hline
-    \end{tabular}%
-    }
-\end{table}
+This statistical analysis showed that for randomly generated puzzles, neither initialization method
+made a quantifiable improvement on the EA's results. Randomly generated puzzles are generally less
+complicated to solve, so the Validity Enforced initialization's lack of impact in this case is justified.
 
-\begin{table}[]
-    \tablecaption{Valadity Inforced Initialized Penalty Function with Small Penalty and Medium Penalty, Provided Puzzle}
+The analysis also showed that the EA was more sensitive to initialization configuration
+for the provided puzzle, an objectively difficult puzzle to solve. The Validity Enforced Uniform Random
+initialization configured EA proved to be statistically better than the Uniform Random initialization
+configured EA for this problem instance. Since enforcing validity upon initialization shrinks the search space by ensuring the validity
+of conditions that can only be fulfilled one way (such as a `3' valued black cell placed along an edge leads to one single way to
+ensure that constraint is valid), and since the search space is more difficult to traverse for 
+highly difficult puzzles, Validity Enforced Uniform Random initialization produces a higher performing EA for 
+the provided puzzle.
+
+
+\subsection{The Penalty Coefficient and its Effect on Solution Quality}
+
+The penalty function EA, tested against the provided puzzle, was configured using three different penalty coefficients
+to test their effect on the EA's performance. The first coefficient tested was a small coefficient, equating to 0.25. The
+second was the medium coefficient, equating to 3. The third was the large coefficient, equating to 10. The fitness graphs for
+each of these coefficients may be found in Figure \ref{fig:website_puzzle_validity_enforced_small_penalty_graph},
+Figure \ref{fig:website_puzzle_validity_enforced_med_penalty_graph}, and Figure 
+\ref{fig:website_puzzle_validity_enforced_large_penalty_graph} respectively.
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_validity_enforced_small_penalty_graph}
+    \fitnessplotcaption{Penalty Function (with Small Penalty Coefficient = 0.25) EA with the Validity Enforced, Provided Puzzle}
+    \label{fig:website_puzzle_validity_enforced_small_penalty_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_validity_enforced_graph}
+    \fitnessplotcaption{Penalty Function (with Large Penalty Coefficient = 3) EA with the Validity Enforced, Provided Puzzle}
+    \label{fig:website_puzzle_validity_enforced_med_penalty_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_validity_enforced_large_penalty_graph}
+    \fitnessplotcaption{Penalty Function (with Large Penalty Coefficient = 10) EA with the Validity Enforced, Provided Puzzle}
+    \label{fig:website_puzzle_validity_enforced_large_penalty_graph}
+\end{figure}
+
+
+In order to properly compare each configuration, pairwise statistical analysis was performed between each pair of coefficient types
+(small, medium, and large). Analysis comparing the small and medium coefficients (Table \ref{small_vs_med}) showed that the small
+penalty coefficient of 0.25 led to an EA that outperformed the EA configured with the medium coefficient of 3. The comparison between
+the medium and large coefficients (Table \ref{med_vs_large}) led to the conclusion that, again, the smaller coefficient configured EA 
+outperformed the larger penalty coefficient configured EA. This conclusion was also drawn from the last comparison, comparing the small
+penalty coefficient to the large penalty coefficient (Table \ref{small_vs_large}).
+
+\begin{table}[H]
+    \tablecaption{Validity Enforced Initialized Penalty Function with Small Penalty and Medium Penalty, Provided Puzzle}
     \label{small_vs_med}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
@@ -789,8 +712,8 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     }
 \end{table}
 
-\begin{table}[]
-    \tablecaption{Valadity Inforced Initialized Penalty Function with Medium Penalty and Large Penalty, Provided Puzzle}
+\begin{table}[H]
+    \tablecaption{Validity Enforced Initialized Penalty Function with Medium Penalty and Large Penalty, Provided Puzzle}
     \label{med_vs_large}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
@@ -813,10 +736,10 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     website\_puzzle\_validity\_enforced is statistically better than website\_puzzle\_validity\_enforced\_large\_penalty &                                     &                                                     \\ \hline
     \end{tabular}%
     }
-    \end{table}
+\end{table}
 
-\begin{table}[]
-    \tablecaption{Valadity Inforced Initialized Penalty Function with Small Penalty and Large Penalty, Provided Puzzle}
+\begin{table}[H]
+    \tablecaption{Validity Enforced Initialized Penalty Function with Small Penalty and Large Penalty, Provided Puzzle}
     \label{small_vs_large}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
@@ -842,11 +765,93 @@ the traversal of invalid areas of the search space, possibly allowing for a more
 \end{table}
 
 
+In each comparison case, the smaller penalty function led to a higher best fitness and a higher average population fitness when
+all run data was averaged. This is because when invalid individuals that do not meet all constraints are penalized, their fitness decreases
+by a small fraction for smaller penalty coefficients and by a larger fraction for larger penalty coefficients. The final population of a
+penalty function configured EA using a small penalty function may actually have the same number of invalid solutions as the population of an
+EA configured with a large penalty coefficient, but the small coefficient EA will read as having higher fitness values. With this fact in mind,
+it is also important to consider the reason a penalty function constraint satisfaction method is used. Employing a penalty function allows for
+invalid solutions to be examined with the hope that those invalid solutions lead to a valid solution after some exploration. This can be 
+equated to traversing the `sea' of validity on the way to a more optimal solution. Keeping the penalty coefficient relatively small incentivizes
+the traversal of invalid areas of the search space, possibly allowing for a more optimal solution to be discovered.
+
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_uniform_random_bonus_graph}
+    \fitnessplotcaption{Repair Function EA with the Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_puzzle_uniform_random_bonus_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_uniform_random_vanilla_graph}
+    \fitnessplotcaption{Plain-Vanilla EA with the Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_puzzle_uniform_random_vanilla_graph}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_uniform_random_bonus_graph}
+    \fitnessplotcaption{Repair Function EA with the Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_uniform_random_bonus_graph}
+\end{figure}
+
+\begin{table}[H]
+    \tablecaption{Uniform Random Initialized Repair Function and Validity Enforced Initialized Repair Function, Randomly Generated Puzzle}
+    \label{uniform_vs_validity_repair_rand}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|l|l|}
+    \hline
+                                                                                                                & random\_gen\_uniform\_random\_bonus & random\_gen\_validity\_enforced\_bonus \\ \hline
+    mean                                                                                                          & 0.9790060265443229                  & 0.9188060294943169                     \\ \hline
+    variance                                                                                                      & 0.0002560072950964829               & 0.060460786982912955                   \\ \hline
+    standard deviation                                                                                            & 0.016000227970141015                & 0.24588775281195474                    \\ \hline
+    observations                                                                                                  & 30                                  & 30                                     \\ \hline
+    df                                                                                                            & 29                                  & 29                                     \\ \hline
+    F                                                                                                             & 0.004234269976817107                &                                        \\ \hline
+    F critical                                                                                                    & 0.5373999648406917                  &                                        \\ \hline
+    Equal variances assumed                                                                                       &                                     &                                        \\ \hline
+                                                                                                                &                                     &                                        \\ \hline
+    observations                                                                                                  & 30                                  &                                        \\ \hline
+    df                                                                                                            & 58                                  &                                        \\ \hline
+    t Stat                                                                                                        & 1.315652066180613                   &                                        \\ \hline
+    P two-tail                                                                                                    & 0.19346782059815182                 &                                        \\ \hline
+    t Critical two-tail                                                                                           & 2.0017                              &                                        \\ \hline
+    Nether random\_gen\_validity\_enforced\_bonus nor random\_gen\_uniform\_random\_bonus is statistically better &                                     &                                        \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+\begin{table}[H]
+    \tablecaption{Uniform Random Initialized Repair Function and Validity Enforced Initialized Repair Function, Provided Puzzle}
+    \label{uniform_vs_validity_repair_provided}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|l|l|}
+    \hline
+                                                                                                                        & website\_puzzle\_uniform\_random\_bonus & website\_puzzle\_validity\_enforced\_bonus \\ \hline
+    mean                                                                                                                  & 0.5038288288288288                      & 0.3173423423423423                         \\ \hline
+    variance                                                                                                              & 0.2221989388036686                      & 0.2015810912263615                         \\ \hline
+    standard deviation                                                                                                    & 0.47137982434939724                     & 0.4489778293260832                         \\ \hline
+    observations                                                                                                          & 30                                      & 30                                         \\ \hline
+    df                                                                                                                    & 29                                      & 29                                         \\ \hline
+    F                                                                                                                     & 1.1022806625952564                      &                                            \\ \hline
+    F critical                                                                                                            & 0.5373999648406917                      &                                            \\ \hline
+    Unequal variances assumed                                                                                             &                                         &                                            \\ \hline
+                                                                                                                        &                                         &                                            \\ \hline
+    observations                                                                                                          & 30                                      &                                            \\ \hline
+    df                                                                                                                    & 31                                      &                                            \\ \hline
+    t Stat                                                                                                                & 1.5426809688332364                      &                                            \\ \hline
+    P two-tail                                                                                                            & 0.12835995483574056                     &                                            \\ \hline
+    t Critical two-tail                                                                                                   & 2.0395                                  &                                            \\ \hline
+    Nether website\_puzzle\_validity\_enforced\_bonus nor website\_puzzle\_uniform\_random\_bonus is statistically better &                                         &                                            \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+
 \section{Multi Objective EA (MOEA)}
 
 \subsection{Introduction}
 
-Assignment 1d involved implementing a Multi-Objective Evolutionary Algorithm (MOEA)
+This section involved implementing a Multi-Objective Evolutionary Algorithm (MOEA)
 to more effectively solve Light Up puzzles by balancing the fulfillment of three
 objectives: 
 
@@ -861,14 +866,14 @@ objectives:
 
 \end{enumerate}
 
-For BONUS \#1, a fourth objective was added, namely minimizing the number of bulbs
+Additionally, a fourth objective was added, namely minimizing the number of bulbs
 placed on the board.
 
 This report outlines this solution's particular
 implementation of an MOEA, the impact of initialization strategies on the MOEA's 
 performance, a comparison between the impact of parent selection, survival strategy, and survival
 selection strategies on MOEA performance, as well as the impact of increasing the
-number of objectives on MOEA performance (BONUS \#1).
+number of objectives on MOEA performance.
 
 
 \subsection{MOEA Overview}
@@ -910,6 +915,61 @@ statistical analysis on the experiment data, it was concluded that there is in f
 between the initialization methods for the tested puzzles. Table \ref{init_random} and Table \ref{init_provided} 
 each display statistical analysis supporting this finding. 
 
+\begin{table}[H]
+\tablecaption{Uniform Random and Validity Enforced Uniform Random Initialized, Randomly Generated Puzzle, EA configurations}        
+\label{init_random}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & random\_gen & random\_gen\_uniform\_random\_init  \\ \hline 
+ mean & 1.10325284795678 & 1.0764116503308314 \\ \hline 
+ variance & 0.04970344216568983 & 0.04355857958196582 \\ \hline 
+ standard deviation & 0.22294268807406498 & 0.20870692269775296 \\ \hline 
+ observations & 30 & 30 \\ \hline 
+ df & 29 & 29 \\ \hline 
+ F & 1.141071234248146 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Unequal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 31 &  \\ \hline 
+  t Stat & 0.47331304656977363 &  \\ \hline 
+  P two-tail & 0.6377741699825987 &  \\ \hline 
+  t Critical two-tail & 2.0395 &  \\ \hline 
+  Nether random\_gen\_uniform\_random\_init nor & & \\
+ random\_gen is statistically better &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
+
+\begin{table}[H] 
+\tablecaption{Uniform Random and Validity Enforced Uniform Random Initialized, Provided Puzzle, EA configurations}        
+\label{init_provided}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & website\_puzzle & website\_puzzle\_uniform\_random\_init  \\ \hline 
+ mean & 0.8031737242867948 & 0.7959489651519909 \\ \hline 
+ variance & 0.000603666878279215 & 0.00058947613524421 \\ \hline 
+ standard deviation & 0.024569633254878164 & 0.02427912962287178 \\ \hline 
+ observations & 30 & 30 \\ \hline 
+ df & 29 & 29 \\ \hline 
+ F & 1.02407348183676 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Unequal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 31 &  \\ \hline 
+  t Stat & 1.1263571505364551 &  \\ \hline 
+  P two-tail & 0.26465388827990055 &  \\ \hline 
+  t Critical two-tail & 2.0395 &  \\ \hline 
+  Nether website\_puzzle\_uniform\_random\_init nor & & \\
+ website\_puzzle is statistically better &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
+
+
 This statistical analysis for this section was performed on the average of all last best subfitnesses, giving thirty
 data points to compare for each MOEA initialization method. The analysis consisted of 
 performing an f-test, which determined if variances could be
@@ -930,6 +990,67 @@ plots for the provided puzzle while figures
 \ref{fig:random_gen_v_ratio}, \ref{fig:random_gen_v_shine}, \ref{fig:random_gen_v_black},
 \ref{fig:random_gen_u_ratio}, \ref{fig:random_gen_u_shine}, and \ref{fig:random_gen_u_black} depict 
 experiment plots for the randomly generated puzzle. 
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_lit_cell_ratio__graph}
+    \fitnessplotcaption{Lit Cell Ratio Subfitness, Validity Enforced plus Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_v_ratio}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_bulb_shine_constr__graph}
+    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_v_shine}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_black_cell_constr__graph}
+    \fitnessplotcaption{Black Cell Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_v_black}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_uniform_random_init_lit_cell_ratio__graph}
+    \fitnessplotcaption{Lit Cell Ratio Subfitness, Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_u_ratio}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_bulb_shine_constr__graph}
+    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_v_shine}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_black_cell_constr__graph}
+    \fitnessplotcaption{Black Cell Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_v_black}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_uniform_random_init_lit_cell_ratio__graph}
+    \fitnessplotcaption{Lit Cell Ratio Subfitness, Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_u_ratio}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_lit_cell_ratio__graph}
+    \fitnessplotcaption{Lit Cell Ratio Subfitness, Validity Enforced plus Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_v_ratio}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_uniform_random_init_bulb_shine_constr__graph}
+    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_u_shine}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen_uniform_random_init_black_cell_constr__graph}
+    \fitnessplotcaption{Black Cell Constraint Subfitness, Uniform Random Initialized, Randomly Generated Puzzle}
+    \label{fig:random_gen_u_black}
+\end{figure}
+
 
 Figure \ref{fig:website_v_ratio} and Figure \ref{fig:website_u_ratio} depict the lit cell ratio subfitness
 plots for the Validity Enforced plus Uniform Random and Uniform Random initialized experiments,
@@ -954,6 +1075,13 @@ the experiments continue. This implies that as more bulbs are placed on the boar
 nature of the algorithm allows for more and more bulbs to shine on each other, keeping those individuals
 with more bulb-shine in the population so long as the levels of non-domination dictate it.
 
+\begin{figure}[H]
+    \addgraphic{website_puzzle_uniform_random_init_bulb_shine_constr__graph}
+    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_u_shine}
+\end{figure}
+
+
 The third subfitness, black cell constraint violations, was examined for both initialization
 schemes in Figure \ref{fig:website_v_black} and Figure \ref{fig:website_u_black}. Before examining
 these plots, it was hypothesized that the Validity Enforced plus Uniform Random initialization 
@@ -963,6 +1091,12 @@ definitively prove this, the graphs provide anecdotal evidence that the Validity
 Random initialization method is in fact superior when it comes to the black cell constraint violations.
 This conclusion was drawn because the Validity Enforced plus Uniform Random method had lower average and
 local best black cell constraints violated at each point on the graph, across all experiments.
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle_uniform_random_init_black_cell_constr__graph}
+    \fitnessplotcaption{Black Cell Constraint Subfitness, Uniform Random Initialized, Provided Puzzle}
+    \label{fig:website_u_black}
+\end{figure}
 
 
 \subsection{Comparison of Parent Selection Strategy, Survival Strategy, and Survival Selection Strategy
@@ -1010,6 +1144,203 @@ puzzle can be found in tables \ref{tourny_web1}, \ref{tourny_web2}, and \ref{tou
 \ref{tourny_rand1}, \ref{tourny_rand2}, and \ref{tourny_rand3} for the randomly generated puzzle experiments.  Additionally, figures for one of the dominant MOEA configurations can be found in figures \ref{fig:tourny_web1},
 \ref{fig:tourny_web2}, and \ref{fig:tourny_web3} for the provided puzzle experiments and in figures \ref{fig:tourny_rand1}, \ref{fig:tourny_rand2}, and \ref{fig:tourny_rand3} 
 for the randomly generated puzzle experiments. \textit{Note that these dominating configurations are described at length below in this section}.
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle__tournament_parent__tournament_survival__plus__lit_cell_ratio__graph}
+    \fitnessplotcaption{Lit Cell Ratio Subfitness, Tournament Parent \& Survival Selection, Plus
+    Survival Strategy, Provided Puzzle}
+    \label{fig:tourny_web1}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle__tournament_parent__tournament_survival__plus__bulb_shine_constr__graph}
+    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Tournament Parent \& Survival Selection,
+    Plus Survival Strategy, Provided Puzzle}
+    \label{fig:tourny_web2}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{website_puzzle__tournament_parent__tournament_survival__plus__black_cell_constr__graph}
+    \fitnessplotcaption{Black Cell Constraint Subfitness, Tournament Parent \& Survival Selection,
+    Plus Survival Strategy, Provided Puzzle}
+    \label{fig:tourny_web3}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen__tournament_parent__tournament_survival__plus__lit_cell_ratio__graph}
+    \fitnessplotcaption{Lit Cell Ratio Subfitness, Tournament Parent \& Survival Selection, Plus
+    Survival Strategy, Randomly Generated Puzzle}
+    \label{fig:tourny_rand1}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen__tournament_parent__tournament_survival__plus__bulb_shine_constr__graph}
+    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Tournament Parent \& Survival Selection,
+    Plus Survival Strategy, Randomly Generated Puzzle}
+    \label{fig:tourny_rand2}
+\end{figure}
+
+\begin{figure}[H]
+    \addgraphic{random_gen__tournament_parent__tournament_survival__plus__black_cell_constr__graph}
+    \fitnessplotcaption{Black Cell Constraint Subfitness, Tournament Parent \& Survival Selection,
+    Plus Survival Strategy, Randomly Generated Puzzle}
+    \label{fig:tourny_rand3}
+\end{figure}
+
+\begin{table}[H]
+\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Provided Puzzle, EA Configuration}        
+\label{tourny_web1}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma & website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
+ mean & 0.03557475942533414 & 0.045719133121307036 \\ \hline 
+ variance & 1.0798324737368128e-06 & 4.716790367219106e-05 \\ \hline 
+ standard deviation & 0.001039149880304479 & 0.006867889317118547 \\ \hline 
+ observations & 30 & 30 \\ \hline df & 29 & 29 \\ \hline 
+ F & 0.022893374300487587 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Unequal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 31 &  \\ \hline 
+  t Stat & -7.864765318971465 &  \\ \hline 
+  P two-tail & 8.251713123765557e-09 &  \\ \hline 
+  t Critical two-tail & 2.0395 &  \\ \hline 
+  website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
+
+\begin{table}[H] 
+\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Provided Puzzle, EA Configuration}        
+\label{tourny_web2}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma & website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
+ mean & 0.33063063063063064 & 0.3691441441441441 \\ \hline 
+ variance & 0.0004167681194708223 & 0.005361222709195682 \\ \hline 
+ standard deviation & 0.020414899447972364 & 0.07322037086218344 \\ \hline 
+ observations & 30 & 30 \\ \hline 
+ df & 29 & 29 \\ \hline 
+ F & 0.07773751289159707 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Unequal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 31 &  \\ \hline 
+  t Stat & -2.728498473507591 &  \\ \hline 
+  P two-tail & 0.01005918482437467 &  \\ \hline 
+  t Critical two-tail & 2.0395 &  \\ \hline 
+  website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
+
+\begin{table}[H] 
+\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Provided Puzzle, EA Configuration}        
+\label{tourny_web3}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus & website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
+ mean & 0.03543878854223681 & 0.045719133121307036 \\ \hline 
+ variance & 6.924752843254994e-07 & 4.716790367219106e-05 \\ \hline 
+ standard deviation & 0.0008321509985125893 & 0.006867889317118547 \\ \hline 
+ observations & 30 & 30 \\ \hline 
+ df & 29 & 29 \\ \hline 
+ F & 0.014681069761719437 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Unequal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 31 &  \\ \hline 
+  t Stat & -8.002369566124022 &  \\ \hline 
+  P two-tail & 6.4560972436788905e-09 &  \\ \hline 
+  t Critical two-tail & 2.0395 &  \\ \hline 
+  website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
+
+\begin{table}[H] 
+\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Randomly Generated Puzzle, EA Configuration}        
+\label{tourny_rand1}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma & random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
+ mean & 0.4827645502645503 & 1.0 \\ \hline 
+ variance & 0.3007261451597099 & 0.5472222222222223 \\ \hline 
+ standard deviation & 0.5483850336758926 & 0.7397447007057383 \\ \hline 
+ observations & 30 & 30 \\ \hline 
+ df & 29 & 29 \\ \hline 
+ F & 0.5495503160278963 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Equal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 58 &  \\ \hline 
+  t Stat & -3.024841182589063 &  \\ \hline 
+  P two-tail & 0.003703278639359185 &  \\ \hline 
+  t Critical two-tail & 2.0017 &  \\ \hline 
+  random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
+
+\begin{table}[H] 
+\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Randomly Generated Puzzle, EA Configuration}        
+\label{tourny_rand2}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus & random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
+ mean & 0.561190476190476 & 1.0 \\ \hline 
+ variance & 0.42458320105820113 & 0.5472222222222223 \\ \hline 
+ standard deviation & 0.6516004919106501 & 0.7397447007057383 \\ \hline 
+ observations & 30 & 30 \\ \hline 
+ df & 29 & 29 \\ \hline 
+ F & 0.7758880831520426 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Equal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 58 &  \\ \hline 
+  t Stat & -2.397095764759235 &  \\ \hline 
+  P two-tail & 0.019767792049039033 &  \\ \hline 
+  t Critical two-tail & 2.0017 &  \\ \hline 
+  random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
+
+\begin{table}[H] 
+\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Randomly Generated Puzzle, EA Configuration}        
+\label{tourny_rand3}                 
+\resizebox{\textwidth}{!}{%        
+\begin{tabular}{|l|l|l|}           
+\hline               
+  & random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus & random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
+ mean & 0.35268032880882605 & 0.4864500836154015 \\ \hline 
+ variance & 0.01582075351042015 & 0.00448740286063112 \\ \hline 
+ standard deviation & 0.12578057684086263 & 0.06698807998913776 \\ \hline 
+ observations & 30 & 30 \\ \hline 
+ df & 29 & 29 \\ \hline 
+ F & 3.525592419886963 &   \\ \hline 
+ F critical & 0.5373999648406917 &   \\ \hline 
+ Equal variances assumed &  &    \\ \hline 
+  &  &     \\ \hline 
+  observations & 30 &  \\ \hline 
+  df & 58 &  \\ \hline 
+  t Stat & -5.055006060309308 &  \\ \hline 
+  P two-tail & 4.60221704581319e-06 &  \\ \hline 
+  t Critical two-tail & 2.0017 &  \\ \hline 
+  random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus &  &   \\ \hline 
+  \end{tabular}%     
+}                    
+\end{table}
 
 The statistical analysis
 methodology is described as follows: First, the last best subfitness for each of the three 
@@ -1059,7 +1390,7 @@ dominated all other configurations. Again, this proves that for this particular 
 of exploration over exploitation is integral in achieving more optimal results.
 
 
-\subsection{BONUS \#1: Impact of Increasing Number of Objectives on MOEA Performance}
+\subsection{Impact of Increasing Number of Objectives on MOEA Performance}
 
 For the first bonus, a fourth subfitness was added to the MOEA, namely a constraint minimizing
 the number of bulbs placed on the board. This constraint directly contradicted one of the main
@@ -1079,343 +1410,9 @@ genotypes with lower lit-cell ratios as the incentive for placing more bulbs wil
 while the incentive for lighting up many cells will stay the same.
 
 
-% Validity Enforced plus Uniform Random Init. Figures
+\section{Conclusion}
 
-\begin{figure}
-    \addgraphic{website_puzzle_lit_cell_ratio__graph}
-    \fitnessplotcaption{Lit Cell Ratio Subfitness, Validity Enforced plus Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_v_ratio}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_bulb_shine_constr__graph}
-    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_v_shine}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_black_cell_constr__graph}
-    \fitnessplotcaption{Black Cell Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_v_black}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_lit_cell_ratio__graph}
-    \fitnessplotcaption{Lit Cell Ratio Subfitness, Validity Enforced plus Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_v_ratio}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_bulb_shine_constr__graph}
-    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_v_shine}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_black_cell_constr__graph}
-    \fitnessplotcaption{Black Cell Constraint Subfitness, Validity Enforced plus Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_v_black}
-\end{figure}
-
-
-% Uniform Random Init. Figures
-
-\begin{figure}
-    \addgraphic{website_puzzle_uniform_random_init_lit_cell_ratio__graph}
-    \fitnessplotcaption{Lit Cell Ratio Subfitness, Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_u_ratio}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_uniform_random_init_bulb_shine_constr__graph}
-    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_u_shine}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle_uniform_random_init_black_cell_constr__graph}
-    \fitnessplotcaption{Black Cell Constraint Subfitness, Uniform Random Initialized, Provided Puzzle}
-    \label{fig:website_u_black}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_uniform_random_init_lit_cell_ratio__graph}
-    \fitnessplotcaption{Lit Cell Ratio Subfitness, Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_u_ratio}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_uniform_random_init_bulb_shine_constr__graph}
-    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_u_shine}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen_uniform_random_init_black_cell_constr__graph}
-    \fitnessplotcaption{Black Cell Constraint Subfitness, Uniform Random Initialized, Randomly Generated Puzzle}
-    \label{fig:random_gen_u_black}
-\end{figure}
-
-
-% In-depth Comparison Figures
-
-\begin{figure}
-    \addgraphic{website_puzzle__tournament_parent__tournament_survival__plus__lit_cell_ratio__graph}
-    \fitnessplotcaption{Lit Cell Ratio Subfitness, Tournament Parent \& Survival Selection, Plus
-    Survival Strategy, Provided Puzzle}
-    \label{fig:tourny_web1}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle__tournament_parent__tournament_survival__plus__bulb_shine_constr__graph}
-    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Tournament Parent \& Survival Selection,
-    Plus Survival Strategy, Provided Puzzle}
-    \label{fig:tourny_web2}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{website_puzzle__tournament_parent__tournament_survival__plus__black_cell_constr__graph}
-    \fitnessplotcaption{Black Cell Constraint Subfitness, Tournament Parent \& Survival Selection,
-    Plus Survival Strategy, Provided Puzzle}
-    \label{fig:tourny_web3}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen__tournament_parent__tournament_survival__plus__lit_cell_ratio__graph}
-    \fitnessplotcaption{Lit Cell Ratio Subfitness, Tournament Parent \& Survival Selection, Plus
-    Survival Strategy, Randomly Generated Puzzle}
-    \label{fig:tourny_rand1}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen__tournament_parent__tournament_survival__plus__bulb_shine_constr__graph}
-    \fitnessplotcaption{Bulb Shine Constraint Subfitness, Tournament Parent \& Survival Selection,
-    Plus Survival Strategy, Randomly Generated Puzzle}
-    \label{fig:tourny_rand2}
-\end{figure}
-
-\begin{figure}
-    \addgraphic{random_gen__tournament_parent__tournament_survival__plus__black_cell_constr__graph}
-    \fitnessplotcaption{Black Cell Constraint Subfitness, Tournament Parent \& Survival Selection,
-    Plus Survival Strategy, Randomly Generated Puzzle}
-    \label{fig:tourny_rand3}
-\end{figure}
-
-
-% Statistical Analysis Tables (Init)
-
-\begin{table}[] 
-\tablecaption{Uniform Random and Validity Enforced Uniform Random Initialized, Randomly Generated Puzzle, EA configurations}        
-\label{init_random}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & random\_gen & random\_gen\_uniform\_random\_init  \\ \hline 
- mean & 1.10325284795678 & 1.0764116503308314 \\ \hline 
- variance & 0.04970344216568983 & 0.04355857958196582 \\ \hline 
- standard deviation & 0.22294268807406498 & 0.20870692269775296 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 1.141071234248146 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Unequal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 31 &  \\ \hline 
-  t Stat & 0.47331304656977363 &  \\ \hline 
-  P two-tail & 0.6377741699825987 &  \\ \hline 
-  t Critical two-tail & 2.0395 &  \\ \hline 
-  Nether random\_gen\_uniform\_random\_init nor & & \\
- random\_gen is statistically better &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
-
-\begin{table}[] 
-\tablecaption{Uniform Random and Validity Enforced Uniform Random Initialized, Provided Puzzle, EA configurations}        
-\label{init_provided}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & website\_puzzle & website\_puzzle\_uniform\_random\_init  \\ \hline 
- mean & 0.8031737242867948 & 0.7959489651519909 \\ \hline 
- variance & 0.000603666878279215 & 0.00058947613524421 \\ \hline 
- standard deviation & 0.024569633254878164 & 0.02427912962287178 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 1.02407348183676 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Unequal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 31 &  \\ \hline 
-  t Stat & 1.1263571505364551 &  \\ \hline 
-  P two-tail & 0.26465388827990055 &  \\ \hline 
-  t Critical two-tail & 2.0395 &  \\ \hline 
-  Nether website\_puzzle\_uniform\_random\_init nor & & \\
- website\_puzzle is statistically better &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
-
-
-% Statistical Analysis Tables (In-Depth)
-
-\begin{table}[] 
-\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Provided Puzzle, EA Configuration}        
-\label{tourny_web1}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma & website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
- mean & 0.03557475942533414 & 0.045719133121307036 \\ \hline 
- variance & 1.0798324737368128e-06 & 4.716790367219106e-05 \\ \hline 
- standard deviation & 0.001039149880304479 & 0.006867889317118547 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 0.022893374300487587 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Unequal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 31 &  \\ \hline 
-  t Stat & -7.864765318971465 &  \\ \hline 
-  P two-tail & 8.251713123765557e-09 &  \\ \hline 
-  t Critical two-tail & 2.0395 &  \\ \hline 
-  website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
-
-\begin{table}[] 
-\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Provided Puzzle, EA Configuration}        
-\label{tourny_web2}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma & website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
- mean & 0.33063063063063064 & 0.3691441441441441 \\ \hline 
- variance & 0.0004167681194708223 & 0.005361222709195682 \\ \hline 
- standard deviation & 0.020414899447972364 & 0.07322037086218344 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 0.07773751289159707 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Unequal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 31 &  \\ \hline 
-  t Stat & -2.728498473507591 &  \\ \hline 
-  P two-tail & 0.01005918482437467 &  \\ \hline 
-  t Critical two-tail & 2.0395 &  \\ \hline 
-  website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
-
-\begin{table}[] 
-\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Provided Puzzle, EA Configuration}        
-\label{tourny_web3}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus & website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
- mean & 0.03543878854223681 & 0.045719133121307036 \\ \hline 
- variance & 6.924752843254994e-07 & 4.716790367219106e-05 \\ \hline 
- standard deviation & 0.0008321509985125893 & 0.006867889317118547 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 0.014681069761719437 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Unequal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 31 &  \\ \hline 
-  t Stat & -8.002369566124022 &  \\ \hline 
-  P two-tail & 6.4560972436788905e-09 &  \\ \hline 
-  t Critical two-tail & 2.0395 &  \\ \hline 
-  website\_puzzle\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than website\_puzzle\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
-
-\begin{table}[] 
-\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Randomly Generated Puzzle, EA Configuration}        
-\label{tourny_rand1}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma & random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
- mean & 0.4827645502645503 & 1.0 \\ \hline 
- variance & 0.3007261451597099 & 0.5472222222222223 \\ \hline 
- standard deviation & 0.5483850336758926 & 0.7397447007057383 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 0.5495503160278963 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Equal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 58 &  \\ \hline 
-  t Stat & -3.024841182589063 &  \\ \hline 
-  P two-tail & 0.003703278639359185 &  \\ \hline 
-  t Critical two-tail & 2.0017 &  \\ \hline 
-  random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_comma &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
-
-\begin{table}[] 
-\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Randomly Generated Puzzle, EA Configuration}        
-\label{tourny_rand2}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus & random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
- mean & 0.561190476190476 & 1.0 \\ \hline 
- variance & 0.42458320105820113 & 0.5472222222222223 \\ \hline 
- standard deviation & 0.6516004919106501 & 0.7397447007057383 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 0.7758880831520426 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Equal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 58 &  \\ \hline 
-  t Stat & -2.397095764759235 &  \\ \hline 
-  P two-tail & 0.019767792049039033 &  \\ \hline 
-  t Critical two-tail & 2.0017 &  \\ \hline 
-  random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
-
-\begin{table}[] 
-\caption{Subfitness Statistical Analysis performed against the Tournament Parent \& Survival Selection, Plus Survival Strategy, Randomly Generated Puzzle, EA Configuration}        
-\label{tourny_rand3}                 
-\resizebox{\textwidth}{!}{%        
-\begin{tabular}{|l|l|l|}           
-\hline               
-  & random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus & random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus  \\ \hline 
- mean & 0.35268032880882605 & 0.4864500836154015 \\ \hline 
- variance & 0.01582075351042015 & 0.00448740286063112 \\ \hline 
- standard deviation & 0.12578057684086263 & 0.06698807998913776 \\ \hline 
- observations & 30 & 30 \\ \hline 
- df & 29 & 29 \\ \hline 
- F & 3.525592419886963 &   \\ \hline 
- F critical & 0.5373999648406917 &   \\ \hline 
- Equal variances assumed &  &    \\ \hline 
-  &  &     \\ \hline 
-  observations & 30 &  \\ \hline 
-  df & 58 &  \\ \hline 
-  t Stat & -5.055006060309308 &  \\ \hline 
-  P two-tail & 4.60221704581319e-06 &  \\ \hline 
-  t Critical two-tail & 2.0017 &  \\ \hline 
-  random\_gen\_\_tournament\_parent\_\_tournament\_survival\_\_plus is statistically better than random\_gen\_\_fitness\_proportional\_parent\_\_fitness\_proportional\_survival\_\_plus &  &   \\ \hline 
-  \end{tabular}%     
-}                    
-\end{table}
+TODO
 
 
 \end{document}
