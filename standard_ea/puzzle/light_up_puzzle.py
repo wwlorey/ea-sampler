@@ -225,6 +225,81 @@ class LightUpPuzzle:
         print()
 
 
+    def visualize_pretty(self, bulbs):
+        """Prints the board in a pretty way."""
+        format = {
+            0: "\x1b[0;37;40m 0 \x1b[0m",
+            1: "\x1b[0;37;40m 1 \x1b[0m",
+            2: "\x1b[0;37;40m 2 \x1b[0m",
+            3: "\x1b[0;37;40m 3 \x1b[0m",
+            4: "\x1b[0;37;40m 4 \x1b[0m",
+            5: "\x1b[0;37;40m   \x1b[0m",
+            'LIT': "\x1b[1;33;43m   \x1b[0m",
+            'BULB': "\x1b[1;33;43m ! \x1b[0m",
+            'NOT_LIT': "\x1b[5;30;47m   \x1b[0m"
+            }
+
+        board = [ [ '_' for col in range(self.num_cols) ] for row in range(self.num_rows) ]
+        # Create and populate set of shined squares
+        self.shined_squares = set([])
+
+        for bulb_coord in bulbs:
+            # Create a list of adjacency lists - used for determining where the bulb shines
+            adj_coord_lists = []
+
+            adj_coord_lists.append(self.coord_board[bulb_coord.x][:bulb_coord.y][::-1])           # Row from this column to the left
+            adj_coord_lists.append(self.coord_board[bulb_coord.x][bulb_coord.y + 1:])             # Row from this column to the right
+            adj_coord_lists.append(self.transpose_coord_board[bulb_coord.y][:bulb_coord.x][::-1]) # Column from this row up
+            adj_coord_lists.append(self.transpose_coord_board[bulb_coord.y][bulb_coord.x + 1:])   # Column from this row down
+
+            for coord_list in adj_coord_lists:
+                for coord in coord_list:
+                    if coord in self.black_squares:
+                        break # Shine cannot propagate any further
+                    elif coord in bulbs:
+                        # Redundant check for bulb on bulb shining
+                        # Nullify the fitness of this board
+                        self.shined_squares = set([])
+                        return False
+                    else:
+                        self.shined_squares.add(coord)
+
+        # Ensure bulbs count as shined squares
+        for bulb_coord in bulbs:
+            self.shined_squares.add(bulb_coord)
+
+        tmp_coords = set([])
+        for x in range(self.num_rows):
+            for y in range(self.num_cols):
+                tmp_coords.add(coord_class.Coordinate(x, y))
+
+        # Print the board
+        for coord, value in self.black_squares.items():
+            board[coord.x][coord.y] = format[value]
+            tmp_coords.remove(coord)
+
+        for coord in self.shined_squares:
+            board[coord.x][coord.y] = format['LIT']
+            if coord in tmp_coords:
+                tmp_coords.remove(coord)
+
+        for coord in bulbs:
+            board[coord.x][coord.y] = format['BULB']
+            if coord in tmp_coords:
+                tmp_coords.remove(coord)
+
+        for coord in tmp_coords:
+            board[coord.x][coord.y] = format['NOT_LIT']
+
+        for row in board:
+            for item in row:
+                print(item, end='')
+
+            print()
+
+        print()
+
+
     def get_num_bulbs(self, coord_list, bulbs):
         """Returns the number of bulbs in coord_list."""
         num_adj_bulbs = 0
