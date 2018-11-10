@@ -228,15 +228,15 @@ class LightUpPuzzle:
     def visualize_pretty(self, bulbs):
         """Prints the board in a pretty way."""
         format = {
-            0: "\x1b[0;37;40m 0 \x1b[0m",
-            1: "\x1b[0;37;40m 1 \x1b[0m",
-            2: "\x1b[0;37;40m 2 \x1b[0m",
-            3: "\x1b[0;37;40m 3 \x1b[0m",
-            4: "\x1b[0;37;40m 4 \x1b[0m",
-            5: "\x1b[0;37;40m   \x1b[0m",
-            'LIT': "\x1b[1;33;43m   \x1b[0m",
-            'BULB': "\x1b[1;33;43m ! \x1b[0m",
-            'NOT_LIT': "\x1b[5;30;47m   \x1b[0m"
+            0: "\x1b[0;37;40m0 \x1b[0m",
+            1: "\x1b[0;37;40m1 \x1b[0m",
+            2: "\x1b[0;37;40m2 \x1b[0m",
+            3: "\x1b[0;37;40m3 \x1b[0m",
+            4: "\x1b[0;37;40m4 \x1b[0m",
+            5: "\x1b[0;37;40m  \x1b[0m",
+            'LIT': "\x1b[1;33;43m  \x1b[0m",
+            'BULB': "\x1b[1;33;43m[]\x1b[0m",
+            'NOT_LIT': "\x1b[5;30;47m  \x1b[0m"
             }
 
         board = [ [ '_' for col in range(self.num_cols) ] for row in range(self.num_rows) ]
