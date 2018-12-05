@@ -39,7 +39,7 @@
 {\large Prepared for: Dr. Steven Corns}
 \vspace{3cm}
 
-{\large November 14th, 2018}
+{\large \today}
 
 \end{minipage}
 \end{center}
@@ -402,12 +402,12 @@ the penalty coefficient used in penalty function constraint satisfaction EAs wil
 
 \subsection{Constraint Satisfaction EA Performance Comparisons}
 
-For the baseline assignment, an EA leveraging a penalty function was implemented. The penalty function
+For a baseline, an EA leveraging a penalty function was implemented. The penalty function
 subtracted from a given genotype's fitness the number of constraints violated multiplied by a
 penalty coefficient. Violated constraints involved bulbs shining on other bulbs and black cell
 constraints not being met.
 
-This EA was compared to an EA implemented for the bonus assignment that used the repair function
+This EA was compared to an EA implemented using the repair function
 constraint satisfaction technique. Figure \ref{fig:website_puzzle_validity_enforced_graph} and Figure 
 \ref{fig:website_puzzle_validity_enforced_bonus_graph} show evaluations versus fitness for the 
 penalty function EA and the repair function EA respectively tested against the Light Up puzzle provided
@@ -456,7 +456,7 @@ optimal when compared to the repair function EA for that problem.
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
     \hline
-                                                                                                            & random\_gen\_validity\_enforced & random\_gen\_validity\_enforced\_bonus \\ \hline
+                                                                                                            & random\_gen\_validity\_enforced & random\_gen\_validity\_enforced\_repair \\ \hline
     mean                                                                                                      & 0.9081384890909392              & 0.9188060294943169                     \\ \hline
     variance                                                                                                  & 0.002217915192875166            & 0.060460786982912955                   \\ \hline
     standard deviation                                                                                        & 0.047094746977504466            & 0.24588775281195474                    \\ \hline
@@ -471,7 +471,7 @@ optimal when compared to the repair function EA for that problem.
     t Stat                                                                                                    & -0.2294580495633768             &                                        \\ \hline
     P two-tail                                                                                                & 0.8200141447652132              &                                        \\ \hline
     t Critical two-tail                                                                                       & 2.0395                          &                                        \\ \hline
-    Nether random\_gen\_validity\_enforced\_bonus nor random\_gen\_validity\_enforced is statistically better &                                 &                                        \\ \hline
+    Nether random\_gen\_validity\_enforced\_repair nor random\_gen\_validity\_enforced is statistically better &                                 &                                        \\ \hline
     \end{tabular}%
     }
 \end{table}
@@ -482,7 +482,7 @@ optimal when compared to the repair function EA for that problem.
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
     \hline
-                                                                                                                & website\_puzzle\_validity\_enforced & website\_puzzle\_validity\_enforced\_bonus \\ \hline
+                                                                                                                & website\_puzzle\_validity\_enforced & website\_puzzle\_validity\_enforced\_repair \\ \hline
     mean                                                                                                        & 0.7569819819819819                  & 0.3173423423423423                         \\ \hline
     variance                                                                                                    & 0.0033889801964126286               & 0.2015810912263615                         \\ \hline
     standard deviation                                                                                          & 0.05821494822133426                 & 0.4489778293260832                         \\ \hline
@@ -497,7 +497,7 @@ optimal when compared to the repair function EA for that problem.
     t Stat                                                                                                      & 5.229384989438686                   &                                            \\ \hline
     P two-tail                                                                                                  & 2.4339170289675772e-06              &                                            \\ \hline
     t Critical two-tail                                                                                         & 2.0017                              &                                            \\ \hline
-    website\_puzzle\_validity\_enforced is statistically better than website\_puzzle\_validity\_enforced\_bonus &                                     &                                            \\ \hline
+    website\_puzzle\_validity\_enforced is statistically better than website\_puzzle\_validity\_enforced\_repair &                                     &                                            \\ \hline
     \end{tabular}%
     }
 \end{table}
@@ -800,7 +800,7 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
     \hline
-                                                                                                                & random\_gen\_uniform\_random\_bonus & random\_gen\_validity\_enforced\_bonus \\ \hline
+                                                                                                                & random\_gen\_uniform\_random\_repair & random\_gen\_validity\_enforced\_repair \\ \hline
     mean                                                                                                          & 0.9790060265443229                  & 0.9188060294943169                     \\ \hline
     variance                                                                                                      & 0.0002560072950964829               & 0.060460786982912955                   \\ \hline
     standard deviation                                                                                            & 0.016000227970141015                & 0.24588775281195474                    \\ \hline
@@ -815,7 +815,7 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     t Stat                                                                                                        & 1.315652066180613                   &                                        \\ \hline
     P two-tail                                                                                                    & 0.19346782059815182                 &                                        \\ \hline
     t Critical two-tail                                                                                           & 2.0017                              &                                        \\ \hline
-    Nether random\_gen\_validity\_enforced\_bonus nor random\_gen\_uniform\_random\_bonus is statistically better &                                     &                                        \\ \hline
+    Nether random\_gen\_validity\_enforced\_repair nor random\_gen\_uniform\_random\_repair is statistically better &                                     &                                        \\ \hline
     \end{tabular}%
     }
 \end{table}
@@ -826,7 +826,7 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|l|}
     \hline
-                                                                                                                        & website\_puzzle\_uniform\_random\_bonus & website\_puzzle\_validity\_enforced\_bonus \\ \hline
+                                                                                                                        & website\_puzzle\_uniform\_random\_repair & website\_puzzle\_validity\_enforced\_repair \\ \hline
     mean                                                                                                                  & 0.5038288288288288                      & 0.3173423423423423                         \\ \hline
     variance                                                                                                              & 0.2221989388036686                      & 0.2015810912263615                         \\ \hline
     standard deviation                                                                                                    & 0.47137982434939724                     & 0.4489778293260832                         \\ \hline
@@ -841,7 +841,7 @@ the traversal of invalid areas of the search space, possibly allowing for a more
     t Stat                                                                                                                & 1.5426809688332364                      &                                            \\ \hline
     P two-tail                                                                                                            & 0.12835995483574056                     &                                            \\ \hline
     t Critical two-tail                                                                                                   & 2.0395                                  &                                            \\ \hline
-    Nether website\_puzzle\_validity\_enforced\_bonus nor website\_puzzle\_uniform\_random\_bonus is statistically better &                                         &                                            \\ \hline
+    Nether website\_puzzle\_validity\_enforced\_repair nor website\_puzzle\_uniform\_random\_repair is statistically better &                                         &                                            \\ \hline
     \end{tabular}%
     }
 \end{table}
@@ -867,7 +867,8 @@ objectives:
 \end{enumerate}
 
 Additionally, a fourth objective was added, namely minimizing the number of bulbs
-placed on the board.
+placed on the board. This objective was added for additional exploration of increased numbers of MOEA
+objectives.
 
 This report outlines this solution's particular
 implementation of an MOEA, the impact of initialization strategies on the MOEA's 
@@ -878,7 +879,7 @@ number of objectives on MOEA performance.
 
 \subsection{MOEA Overview}
 
-The MOEA implemented in this assignment is based on the NSGA-II algorithm. It begins,
+The MOEA implemented as part of this project is based on the NSGA-II algorithm. It begins,
 similar to a standard evolutionary algorithm, by creating an initial population using
 either uniform random or validity enforced plus uniform random initialization, the 
 settings for which are specified in the algorithm configuration file. That population
@@ -979,8 +980,7 @@ treated as equal. In both cases, the f-test yielded that unequal variances shoul
 puzzles tested.
 
 To visually interpret the data, plots of evaluations versus average local subfitness and evaluations 
-versus local best subfitness were graphed for each of the subfitnesses collected in this experiment (not
-including the bonus):
+versus local best subfitness were graphed for each of the subfitnesses collected in this experiment:
 ratio of lit cells to total number of white cells, number of bulbs shining on each other, and 
 number of black cell constraints not met. For concision, figures pertaining to only the provided puzzle
 are discussed in this section as the randomly generated puzzle results are quite similar. Figures 
@@ -1392,7 +1392,7 @@ of exploration over exploitation is integral in achieving more optimal results.
 
 \subsection{Impact of Increasing Number of Objectives on MOEA Performance}
 
-For the first bonus, a fourth subfitness was added to the MOEA, namely a constraint minimizing
+A fourth subfitness was added to the MOEA, namely a constraint minimizing
 the number of bulbs placed on the board. This constraint directly contradicted one of the main
 measures of an EA's performance - the ratio of lit cells to the total number of white cells.
 For an MOEA to be successful with only the lit cell ratio, bulb shine constraint violations, and
