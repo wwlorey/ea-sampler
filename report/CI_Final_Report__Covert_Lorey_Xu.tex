@@ -2,6 +2,7 @@
 \usepackage[left=3cm, right=3cm, top=2cm]{geometry}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage[hidelinks]{hyperref}
 
 % Prevent heading numbers
 \setcounter{secnumdepth}{0}
@@ -18,6 +19,7 @@
 \newcommand{\tablecaption}[1]{\caption{Statistical Analysis performed on the {#1}, EA configurations}}
 
 \begin{document}
+
 
 % Header Page
 \thispagestyle{empty}
@@ -58,7 +60,127 @@ TODO
 
 \section{Software Discussion}
 
-TODO
+\subsection{Introduction}
+
+As part of this project, software was written in Python 3
+to implement, run, and analyze evolutionary algorithms that solve Light Up puzzles. For each
+of the four algorithm types explored (random search, standard EA,
+constraint satisfaction EA, and MOEA), a separate code base
+was maintained, with all code bases containing shared elements.
+
+Note that the source code for this project was not included
+as part of this report document for concision, but can be viewed on GitHub by using
+the following link: 
+
+\vspace{5mm}
+
+{\centering \texttt{\url{https://github.com/wwlorey/ea-sampler/}}\par }
+
+\vspace{5mm}
+
+In the git repository there are four folders, each named
+in accordance with the algorithmic approach it contains.
+The following is a brief overview of how the general EA driver module was
+structured, information about EA configuration, and instructions on 
+running the algorithms.
+
+\subsection{EA Driver Module}
+
+The heart of every EA implemented as part of this project
+was the EA driver module. Implemented for each EA type at the
+path \texttt{ea/ea\_driver.py}, this module acted as the primary
+driver for all high-level evolutionary algorithm functioning for the algorithms and was slightly adjusted
+depending on the individual algorithm requirements.
+
+Each EA driver contained functions to drive the main program
+logic, including, for example, the functions \texttt{evaluate, 
+select\_parents, recombine, mutate, select\_for\_survival,} 
+and \texttt{decide\_termination} among other helper functions.
+These functions interfaced with a lower-level driver, which
+contained the individual phenotype which in this case was 
+the Light Up puzzle 2D board. This phenotype was acted upon by
+genotype classes containing sets of bulbs. These genotypes were
+mapped to a singular phenotype for each experiment run and
+individuals in the population were treated as the bulb sets,
+with the aforementioned EA functions acting on the genotype classes.
+
+While all aspects of the EA driver and other related modules
+are not individually discussed for brevity, the code is 
+thoroughly documented if one desires to peruse it.
+
+
+\subsection{Configuration Parameters}
+
+For easy configuration of EA experiments and for the sake of 
+the programmers, configuration files were loaded with settings
+and fed into the algorithms to setup all configurable values.
+These files were stored in the \texttt{config} directory
+of each EA folder and the structure of the config files 
+changed slightly from algorithm to algorithm.
+
+An example of the configuration parameters of note available in the 
+case of the standard EA are as follows:
+
+\begin{itemize}
+    \item mu (population size)
+    \item lambda (offspring pool size)
+    \item num\_experiment\_runs 
+    \item num\_fitness\_evaluations 
+    \item n\_termination\_convergence\_criterion 
+    \item termination\_convergence\_criterion\_magnitude 
+    \item parent\_population\_size 
+    \item use\_fitness\_proportional\_selection 
+    \item k\_parent\_selection 
+    \item use\_truncation 
+    \item k\_survival\_selection 
+    \item n\_point\_crossover 
+    \item parent\_selection\_weight 
+    \item mutation\_probability 
+    \item input\_file\_path 
+    \item log\_file\_path 
+    \item soln\_file\_path 
+    \item force\_validity 
+    \item use\_external\_seed 
+    \item external\_seed\_value
+    \item generate\_uniform\_random\_puzzle 
+    \item black\_square\_placement\_prob 
+    \item bulb\_placement\_prob 
+    \item min\_random\_board\_dimension 
+    \item max\_random\_board\_dimension 
+    \item override\_random\_board\_dimensions 
+    \item override\_num\_rows 
+    \item override\_num\_cols 
+\end{itemize}
+
+Choosing an optional configuration file to load is discussed in the following section.
+
+
+\subsection{Execution Instructions}
+
+A \texttt{run.sh} script has been included in the root of each EA
+directory on the git repository. If one wishes to run a particular
+EA, all they must do is run that script in the directory of the EA
+of their choice. Running this script without any command line arguments
+will load the default configuration (\texttt{default.cfg}), found in the \texttt{config} folder
+of each EA directory.
+
+For example, the following command would run the EA in the folder
+containing it with a default configuration:
+
+\vspace{5mm}
+
+{\centering \texttt{./run.sh}\par }
+
+\vspace{5mm}
+
+The following command would run the EA in the folder
+containing it with the configuration \texttt{website\_puzzle.cfg}:
+
+\vspace{5mm}
+
+{\centering \texttt{./run.sh config/website\_puzzle.cfg}\par }
+
+\vspace{5mm}
 
 
 \section{Random Search}
@@ -222,8 +344,6 @@ Standard Deviation & sqrt(0.001202739143) & 0.03468052973 \\ \hline
 \end{table}
 
 
-\subsection{Validity Enforced versus Uniform Random EA Initialization Analysis, Provided Puzzle}
-
 Table \ref{bonus_table1}, Table \ref{bonus_table2}, and Table \ref{bonus_table3} are the result of statistical analysis performed on the 
 evolutionary algorithm run on a provided puzzle with one version initialized in a 
 uniform random approach and the other initialized with validity enforcement also using 
@@ -291,10 +411,6 @@ Standard Deviation & sqrt(0.00004638842011) & 0.0068109045 \\ \hline
 \end{tabular}
 \end{table}
 
-
-
-
-\subsection{Validity Enforced versus Uniform Random EA Initialization Analysis, Randomly Generated Puzzles}
 
 Table \ref{bonus_table4}, Table \ref{bonus_table5}, and Table \ref{bonus_table6} are the result of statistical analysis performed on 
 the evolutionary algorithm run on a randomly generated puzzle with one version 
