@@ -93,7 +93,7 @@ TODO
 TODO
 
 
-\subsection{Statistical Analysis Overview}
+\subsection{Discussion}
 
 For both puzzle varieties (the provided puzzle and the generated puzzle) the 
 evolutionary algorithm was compared to the random search algorithm to determine 
@@ -121,7 +121,7 @@ tests:
 
 This condition's validity meant that the null hypothesis was rejected, meaning that the 
 variable with the larger mean indicated a better algorithm (statistically) on this 
-particular problem instance. In both cases, the evolutionary algorithm had a 
+particular problem instance. In both cases, the standard evolutionary algorithm had a 
 larger mean when compared to that of the random search. Because of this, the 
 evolutionary algorithm is proven to be superior to the random search for this problem 
 instance, in both the case of the provided puzzle and the randomly generated puzzle.
@@ -396,9 +396,9 @@ Standard Deviation & sqrt(0.00008180893878) & 0.00904482939 \\ \hline
 \subsection{Introduction}
 
 This section involved implementing an EA leveraging constraint satisfaction to
-more effectively solve Light Up puzzles. This report compares the performance of
+more effectively solve Light Up puzzles. The performance of
 penalty function and repair function constraint satisfaction techniques as well as
-plain-vanilla EA performance. It also outlines a comparison between Validity Forced plus 
+plain-vanilla EA performance are compared as part of this section. It also outlines a comparison between Validity Forced plus 
 Uniform Random versus plain Uniform Random initialization for a plain-vanilla EA,
 a constraint satisfaction EA employing a penalty function, and a constraint satisfaction
 EA employing a repair function. The extent to which EA performance is affected by 
@@ -873,7 +873,7 @@ objectives:
 
 Additionally, a fourth objective was added, namely minimizing the number of bulbs
 placed on the board. This objective was added for additional exploration of increased numbers of MOEA
-objectives.
+objectives and was not the main focus of this section.
 
 This report outlines this solution's particular
 implementation of an MOEA, the impact of initialization strategies on the MOEA's 
@@ -884,7 +884,7 @@ number of objectives on MOEA performance.
 
 \subsection{MOEA Overview}
 
-The MOEA implemented as part of this project is based on the NSGA-II algorithm. It begins,
+The MOEA implemented as part of this section is based on the NSGA-II algorithm. It begins,
 similar to a standard evolutionary algorithm, by creating an initial population using
 either uniform random or validity enforced plus uniform random initialization, the 
 settings for which are specified in the algorithm configuration file. That population
