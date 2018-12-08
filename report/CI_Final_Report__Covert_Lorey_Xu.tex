@@ -230,7 +230,25 @@ TODO
 
 \subsection{Introduction}
 
-TODO
+The standard EA was a step up when compared to the random search 
+algorithm. Is started off with the same randomized initial 
+population as the random search. In addition, the 
+standard EA utilized evolutionary processes, including 
+fitness evaluations, parent selection, recombination 
+of solutions, and survival selection. This evolutionary 
+approach makes the algorithm perform a stochastic hill 
+climb to find optimal solutions. 
+
+The fitness function for this EA reflects the quality of 
+the solution considering the following aspects: number 
+of cells being lit, whether the black cell adjacency 
+constraint is satisfied, and whether any light bulb is 
+shining on any other light bulb. Due to the coarse gradient of 
+the fitness function, the EA was expected to perform poorly, 
+thus the authors implemented another fitness evaluation 
+function such that the black cell adjacency constraint was being 
+ignored. This greatly reduced the difficulty of the puzzle and 
+using this approach, and as such, improvements from the random search were observed.
 
 
 \subsection{Discussion}
