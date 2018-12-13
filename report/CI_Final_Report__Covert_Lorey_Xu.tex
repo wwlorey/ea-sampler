@@ -204,13 +204,22 @@ containing it with the configuration \texttt{website\_puzzle.cfg}:
 \section{Random Search}
 
 \subsection{Introduction}
-
-TODO
-
+The Purpose of the Random Search Algorithm is to serve as a baseline
+to compare all of the other Evolutionary Algorithms performance and serve 
+as an introduction to the actual puzzle itself. This Algorithm does not 
+actually try to solve the puzzle, it just places down light bulbs on the
+map that gets generated for it. The random placement was made to satisfy the  
+bulb shining constraint, but it pays no attention to the black cell constraint.
+The total number of bulbs placed is also random, sometimes a map will only have two
+or three bulbs placed on it, and sometimes a lot of bulbs are placed on the map.
 
 \subsection{Discussion}
-
-TODO
+Unsurprisingly when the random search solutions are placed into the fitness function 
+it performs the worst by far. These results show that the light up puzzle is one where
+using computational intelligence is very useful to solve this problem. While this problem
+is not a practical one, it is not to hard to imagine real world problems can lead to the same
+situation where using some form of computational intelligence can be very helpful, if not almost 
+necessary to solve the problem.
 
 
 \begin{figure}[H]
@@ -1568,9 +1577,15 @@ while the incentive for lighting up many cells will stay the same.
 
 
 \section{Conclusion}
-
-TODO
-
+Knowing the problem you are trying solve is important when trying to use a computer program to solve
+it. There are many different techniques, especially in the field of computational intelligence, so it 
+can save a lot of time and money to know which ones to use. Our results showcase the different performances
+between different approaches to the same problem. In our case, we found that our constraint satisfaction EA 
+performed the best. Despite this it may be that with a better implementation, the MOEA would have performed 
+better.
+Each of these algorithms have strengths and weakness based on the way they evolve to solve the problem,
+and knowing the inner workings of many different EA's helps in the ultimate goal that lead to the creation
+computer programs and computational intelligence in the first place, solving problems.
 
 \end{document}
 
